@@ -14,7 +14,7 @@
 <!--    ได้จาก Apps Script → การทำให้ใช้งานได้ → เว็บแอป → คัดลอก URL  -->
 <!-- ============================================================= -->
 <script>
-  const UI_VERSION = 'v12.0';
+  const UI_VERSION = 'v12.1';
   const API_URL = 'https://kps-sue-api.kruprompt.workers.dev/api';  // ⚡ v12: ชี้ที่ Cloudflare Worker (Worker เป็นคนคุยกับ GAS /exec เอง — เปลี่ยน Deployment GAS แก้ที่ Worker จุดเดียว)
 </script>
 
@@ -90,8 +90,8 @@ tailwind.config = {
   </header>
 
   <!-- กล่องเข้าสู่ระบบด้วย Gmail -->
-  <main class="max-w-md mx-auto px-4 pb-16">
-    <section id="loginBox" class="card rounded-2xl p-6 sm:p-8 fade-up">
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 pb-16">  <!-- v12.1: กว้างตามหน้าจอ (มือถือเต็มจอ / คอม ≈1150px) -->
+    <section id="loginBox" class="card rounded-2xl p-6 sm:p-8 fade-up max-w-md mx-auto">
       <h2 class="text-xl font-semibold text-brand-800 text-center">เข้าถึงสื่อการสอนของคุณ</h2>
       <p class="text-center text-sm text-slate-500 mt-1">กรอกอีเมล (Gmail) ที่ใช้สั่งซื้อ</p>
       <div class="mt-5 space-y-3">
@@ -619,8 +619,8 @@ async function submitOtp(){
 function renderSkeleton_(){
   $('loginBox').classList.add('hidden');
   const box = $('contentBox'); box.classList.remove('hidden');
-  box.innerHTML = '<div class="grid grid-cols-2 sm:grid-cols-3 gap-4">' +
-    Array(3).fill('<div class="card rounded-2xl overflow-hidden animate-pulse"><div class="w-full h-28 bg-slate-200"></div><div class="p-4 space-y-2"><div class="h-4 bg-slate-200 rounded w-2/3"></div><div class="h-3 bg-slate-100 rounded w-1/2"></div></div></div>').join('') + '</div>';
+  box.innerHTML = '<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">' +
+    Array(4).fill('<div class="card rounded-2xl overflow-hidden animate-pulse"><div class="w-full h-28 bg-slate-200"></div><div class="p-4 space-y-2"><div class="h-4 bg-slate-200 rounded w-2/3"></div><div class="h-3 bg-slate-100 rounded w-1/2"></div></div></div>').join('') + '</div>';
 }
 function restoreLogin_(){ if(!MY_DATA){ $('contentBox').classList.add('hidden'); $('contentBox').innerHTML=''; $('loginBox').classList.remove('hidden'); } }
 
@@ -716,7 +716,7 @@ function renderCustomerGrid(){
       ${d.subjects.length>6?`<input id="custSearch" value="${esc(CUST_QUERY)}" oninput="setCustQuery(this.value)" placeholder="🔍 ค้นหาวิชา..." class="text-xs border border-brand-100 rounded-full px-3 py-1.5 w-36 sm:w-44 flex-shrink-0">`:''}
     </div>`;
   }
-  html += `<div class="grid grid-cols-2 sm:grid-cols-3 gap-4">`;
+  html += `<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">`;
   d.subjects.forEach((s,i)=>{
     if(!match(s)) return;
     html += `<button onclick="gotoSubject(${i})" class="card rounded-2xl overflow-hidden text-left hover:shadow-lg transition group">
@@ -748,9 +748,9 @@ function renderSubjectPage(s){
    <div class="card rounded-2xl overflow-hidden mb-4">
      <div class="bg-gradient-to-r from-brand-700 to-emerald-500 text-white p-4 sm:p-5">
        <div class="flex items-center gap-4">
-         <div class="w-16 h-16 rounded-xl overflow-hidden bg-white/15 flex-shrink-0">${coverHtml_(s,false).replace('aspect-square','h-16')}</div>
+         <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden bg-white/15 flex-shrink-0">${coverHtml_(s,false).replace('aspect-square','h-16 sm:h-20')}</div>
          <div class="min-w-0">
-           <h2 class="text-xl font-bold truncate">${esc(s.name)}</h2>
+           <h2 class="text-xl sm:text-2xl font-bold truncate">${esc(s.name)}</h2>
            <p class="text-emerald-100 text-sm">${esc(s.level||'')}${s.hours?' · '+esc(s.hours)+' ชม.':''}${s.curriculum?' · หลักสูตร '+esc(s.curriculum):''}</p>
          </div>
        </div>
@@ -810,7 +810,7 @@ function renderPlansPane_(s, plans){
   const list = plans.filter(p=>!CUR_UNIT || p.unit===CUR_UNIT);
   if(!list.length){ html += `<p class="text-sm text-slate-400 text-center py-6">ยังไม่มีสื่อ${CUR_UNIT?('ในหน่วย '+CUR_UNIT):'ในวิชานี้'}</p>`; }
   else{
-    html += `<div class="grid sm:grid-cols-2 gap-3">`+list.map(p=>`
+    html += `<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">`+list.map(p=>`
       <div class="card rounded-xl p-3.5 flex items-center gap-3">
         ${p.unit?`<div class="w-9 h-9 rounded-lg bg-brand-50 text-brand-700 flex items-center justify-center font-extrabold text-sm flex-shrink-0">${p.unit}</div>`:''}
         <div class="flex-1 min-w-0">
@@ -839,8 +839,8 @@ function renderDocsPane_(sid, data){
     $('paneDocs').innerHTML = `<p class="text-sm text-slate-400 text-center py-6">${data.noFolder?'วิชานี้ยังไม่ผูกโฟลเดอร์เอกสาร':'ยังไม่มีไฟล์เอกสาร'}</p>`;
     return;
   }
-  $('paneDocs').innerHTML = data.cats.map(c=>`
-    <section class="card rounded-2xl p-4 sm:p-5 mb-4">
+  $('paneDocs').innerHTML = '<div class="grid gap-4 lg:grid-cols-2 items-start">' + data.cats.map(c=>`
+    <section class="card rounded-2xl p-4 sm:p-5">
       <div class="flex items-center justify-between flex-wrap gap-2 mb-2">
         <h3 class="font-bold text-brand-800">${/^ชุดเอกสาร/.test(c.name)?'📘':/^แบบทดสอบ/.test(c.name)?'📝':'🗂️'} ${esc(c.name)}</h3>
         <button onclick="downloadCatZip('${esc(String(sid))}','${esc(c.name).replace(/'/g,"\\'")}',this)" class="bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-lg px-4 py-2">📦 โหลดทั้งหมวด (ZIP)</button>
@@ -853,7 +853,7 @@ function renderDocsPane_(sid, data){
           </div>`).join('')}
       </div>
       <p class="text-[11px] text-slate-400 mt-3">💡 ไฟล์เป็น .zip — ถ้าเครื่องยังไม่มีโปรแกรมแตกไฟล์ <a href="https://www.win-rar.com/download.html" target="_blank" rel="noopener" class="text-brand-600 underline">ดาวน์โหลด WinRAR ที่นี่</a> แล้วคลิกขวาไฟล์ → "Extract Here"</p>
-    </section>`).join('');
+    </section>`).join('') + '</div>';
 }
 
 
