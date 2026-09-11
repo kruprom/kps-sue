@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<base target="_top">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,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">
+<title>ระบบครูพร้อมสอน</title>
+<link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#059669">
+
+<!-- ============================================================= -->
+<!-- 🔧 ตั้งค่า: วาง Web App URL ของคุณตรงนี้ (ส่วนบนสุดเพื่อแก้ง่าย) -->
+<!--    ได้จาก Apps Script → การทำให้ใช้งานได้ → เว็บแอป → คัดลอก URL  -->
+<!-- ============================================================= -->
+<script>
+  const UI_VERSION = 'v12.0';
+  const API_URL = 'https://kps-sue-api.kruprompt.workers.dev/api';  // ⚡ v12: ชี้ที่ Cloudflare Worker (Worker เป็นคนคุยกับ GAS /exec เอง — เปลี่ยน Deployment GAS แก้ที่ Worker จุดเดียว)
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Sarabun', 'sans-serif'],
+        display: ['Mitr', 'sans-serif']
+      },
+      colors: {
+        brand:  { 50:'#eefdf6', 100:'#d6f7e6', 200:'#aeecd0', 300:'#76dbb4', 400:'#3cc191', 500:'#16a674', 600:'#0c855e', 700:'#0c6a4d', 800:'#0e543f', 900:'#0d4535' },
+        amber2: { 400:'#fbbf24', 500:'#f59e0b', 600:'#d97706' }
+      }
+    }
+  }
+}
+</script>
+
+<style>
+  body{ font-family:'Sarabun',sans-serif; background:#f4faf7;
+        background-image:radial-gradient(circle at 12% 8%, #d6f7e6 0, transparent 38%),
+                         radial-gradient(circle at 92% 0%, #fef3c7 0, transparent 30%); }
+  h1,h2,h3,.font-display{ font-family:'Mitr',sans-serif; }
+  .blink{ animation:blink 1.4s ease-in-out infinite; }
+  @keyframes blink{ 0%,100%{opacity:1} 50%{opacity:.25} }
+  .fade-up{ animation:fadeUp .45s ease both; }
+  @keyframes fadeUp{ from{opacity:0; transform:translateY(12px)} to{opacity:1; transform:translateY(0)} }
+  .spin{ animation:spin 1s linear infinite; } @keyframes spin{ to{transform:rotate(360deg)} }
+  .card{ background:#fff; border:1px solid #e6f1ec; box-shadow:0 6px 20px -10px rgba(13,69,53,.18); }
+  .tab-btn.active{ background:#0c855e; color:#fff; box-shadow:0 6px 14px -6px rgba(12,133,94,.6); }
+  input,select,textarea{ outline:none; }
+  input:focus,select:focus,textarea:focus{ border-color:#16a674; box-shadow:0 0 0 3px rgba(22,166,116,.15); }
+  ::-webkit-scrollbar{ height:8px; width:8px } ::-webkit-scrollbar-thumb{ background:#bfe6d5; border-radius:8px }
+</style>
+</head>
+
+<body class="text-slate-800 min-h-screen">
+
+<!-- ========== LOADING ========== -->
+<div id="loading" class="fixed inset-0 z-[90] hidden items-center justify-center bg-white/70 backdrop-blur-sm">
+  <div class="flex flex-col items-center gap-3">
+    <div class="spin w-12 h-12 rounded-full border-4 border-brand-200 border-t-brand-600"></div>
+    <p id="loadingMsg" class="text-brand-700 font-medium">กำลังโหลด...</p>
+  </div>
+</div>
+
+<!-- ========== TOAST ========== -->
+<div id="toast" class="fixed top-4 right-4 z-[100] flex flex-col gap-2"></div>
+
+<!-- ============================================================= -->
+<!-- ====================  หน้าจอลูกค้า  ========================== -->
+<!-- ============================================================= -->
+<div id="view-customer">
+  <header class="text-center pt-8 pb-5 px-4">
+    <div class="inline-flex items-center gap-2 justify-center">
+      <img id="custLogo" class="hidden h-11 w-11 rounded-full object-cover border border-brand-100">
+      <span id="custLogoFallback" class="text-3xl">📚</span>
+      <h1 id="custTitle" class="text-3xl sm:text-4xl font-bold text-brand-800">ระบบครูพร้อมสอน</h1>
+    </div>
+    <p id="custSlogan" class="text-brand-600/80 mt-1 text-sm sm:text-base">แผนพร้อมปริ้น สื่อพร้อมใช้ เข้าถึงได้ทุกที่ทุกอุปกรณ์</p>
+    <div class="mt-3 inline-flex items-center gap-2 text-xs bg-white/70 border border-brand-100 rounded-full px-3 py-1 text-brand-700">
+      <span id="connDot" class="w-2 h-2 rounded-full bg-slate-300"></span>
+      <span id="connText">☁️ กำลังเชื่อมต่อ Google Sheets...</span>
+    </div>
+  </header>
+
+  <!-- กล่องเข้าสู่ระบบด้วย Gmail -->
+  <main class="max-w-md mx-auto px-4 pb-16">
+    <section id="loginBox" class="card rounded-2xl p-6 sm:p-8 fade-up">
+      <h2 class="text-xl font-semibold text-brand-800 text-center">เข้าถึงสื่อการสอนของคุณ</h2>
+      <p class="text-center text-sm text-slate-500 mt-1">กรอกอีเมล (Gmail) ที่ใช้สั่งซื้อ</p>
+      <div class="mt-5 space-y-3">
+        <input id="custEmail" type="email" inputmode="email" placeholder="example@gmail.com"
+               class="w-full border border-slate-200 rounded-xl px-4 py-3 text-center text-lg"
+               onkeydown="if(event.key==='Enter')customerLogin()">
+        <button onclick="customerLogin()"
+                class="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold py-3 rounded-xl transition">
+          🔓 เข้าสู่สื่อของฉัน
+        </button>
+      </div>
+      <!-- 🔐 ยืนยันเครื่องใหม่ด้วยรหัสจากอีเมล -->
+      <div id="otpBox" class="hidden mt-5 border-t border-slate-100 pt-5 space-y-3">
+        <p class="text-sm text-center text-slate-600">📮 ส่งรหัส 6 หลักไปที่ <b id="otpMail" class="text-brand-700"></b> แล้ว<br><span class="text-xs text-slate-400">เช็คกล่องจดหมาย (หรือถังสแปม) — รหัสใช้ได้ 10 นาที ยืนยันครั้งแรกครั้งเดียวต่อเครื่อง</span></p>
+        <input id="otpCode" inputmode="numeric" maxlength="6" placeholder="______"
+               class="w-full border border-brand-200 rounded-xl px-4 py-3 text-center text-2xl tracking-[0.5em] font-bold"
+               onkeydown="if(event.key==='Enter')submitOtp()">
+        <button onclick="submitOtp()" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold py-3 rounded-xl transition">✅ ยืนยันรหัส</button>
+        <button id="otpResend" onclick="resendOtp()" class="w-full text-sm text-brand-600 underline disabled:text-slate-300 disabled:no-underline" disabled>ส่งรหัสอีกครั้ง</button>
+      </div>
+      <p class="text-xs text-slate-400 text-center mt-4">หากยังไม่มีสิทธิ์เข้าถึง กรุณาติดต่อเพจครูพร้อมสอน</p>
+    </section>
+
+    <!-- ผลลัพธ์หลังเข้าสู่ระบบ -->
+    <section id="contentBox" class="hidden"></section>
+  </main>
+
+  <!-- ปุ่มผู้ดูแล -->
+  <div class="text-center pb-8">
+    <button onclick="openAdminGate()" class="text-xs text-slate-400 hover:text-brand-600 underline">สำหรับผู้ดูแลระบบ</button>
+  </div>
+
+  <footer class="border-t border-brand-100 bg-white/60 py-4 px-4 text-center text-[11px] sm:text-xs text-slate-500 leading-relaxed">
+    Copyright © เพจครูพร้อมสอน. All Rights Reserved.
+    <div class="verline text-[10px] text-slate-400 mt-1"></div>
+  </footer>
+</div>
+
+<!-- ============================================================= -->
+<!-- ====================  หน้าจอผู้ดูแล  ========================= -->
+<!-- ============================================================= -->
+<div id="view-admin" class="hidden">
+  <!-- หัว + Action Bar -->
+  <header class="bg-white border-b border-brand-100 sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 py-3">
+      <div class="flex items-center justify-between flex-wrap gap-3">
+        <div class="flex items-center gap-2">
+          <span class="text-2xl">🛠️</span>
+          <div>
+            <h1 class="text-lg font-bold text-brand-800 leading-none">ครูพร้อมสื่อ · ผู้ดูแล</h1>
+            <span class="text-xs text-brand-600 inline-flex items-center gap-1 mt-0.5">
+              <span class="w-2 h-2 rounded-full bg-green-500 blink"></span> เชื่อมต่อ Google Sheets (Online)
+            </span>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="doBackup()"  class="bg-green-600 hover:bg-green-700 text-white text-sm px-3 py-2 rounded-lg">💾 สำรอง</button>
+          <button onclick="$('importFile').click()" class="bg-blue-600 hover:bg-blue-700 text-white text-sm px-3 py-2 rounded-lg">📥 นำเข้า</button>
+          <button onclick="openClearModal()" class="bg-red-600 hover:bg-red-700 text-white text-sm px-3 py-2 rounded-lg">🗑️ ล้างข้อมูล</button>
+          <button onclick="exitAdmin()" class="text-slate-500 hover:text-brand-700 text-sm px-2 py-2">↩ ออก</button>
+          <input id="importFile" type="file" accept=".json" class="hidden" onchange="doImport(this)">
+        </div>
+      </div>
+      <div class="mt-2 text-xs text-amber2-600 flex items-center gap-1">
+        💡 ข้อมูลถูกบันทึกบน Google Sheets ของคุณอัตโนมัติ ใช้งานได้จากทุกอุปกรณ์
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <nav class="max-w-6xl mx-auto px-4 pb-3 flex gap-2 overflow-x-auto">
+      <button class="tab-btn active whitespace-nowrap text-sm font-medium px-4 py-2 rounded-lg bg-brand-50 text-brand-700" data-tab="subjects" onclick="switchTab('subjects')">📚 จัดการวิชา</button>
+      <button class="tab-btn whitespace-nowrap text-sm font-medium px-4 py-2 rounded-lg bg-brand-50 text-brand-700" data-tab="plans"    onclick="switchTab('plans')">🎬 จัดการสื่อ</button>
+      <button class="tab-btn whitespace-nowrap text-sm font-medium px-4 py-2 rounded-lg bg-brand-50 text-brand-700" data-tab="access"   onclick="switchTab('access')">🔑 จัดการสิทธิ์</button>
+      <button class="tab-btn whitespace-nowrap text-sm font-medium px-4 py-2 rounded-lg bg-brand-50 text-brand-700" data-tab="report"   onclick="switchTab('report')">📊 รายงานสรุป</button>
+      <button class="tab-btn whitespace-nowrap text-sm font-medium px-4 py-2 rounded-lg bg-brand-50 text-brand-700" data-tab="settings" onclick="switchTab('settings')">⚙️ ตั้งค่าระบบ</button>
+      <button class="tab-btn whitespace-nowrap text-sm font-medium px-4 py-2 rounded-lg bg-brand-50 text-brand-700" data-tab="manual"   onclick="switchTab('manual')">📖 คู่มือ</button>
+    </nav>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-6">
+
+    <!-- ===== TAB: จัดการวิชา ===== -->
+    <section id="tab-subjects" class="tab-panel">
+      <div class="card rounded-2xl p-5 mb-5">
+        <h3 class="font-semibold text-brand-800 mb-3">➕ เพิ่มวิชาใหม่</h3>
+        <div class="grid sm:grid-cols-6 gap-3">
+          <input id="sjName"  placeholder="ชื่อวิชา *"  class="border border-slate-200 rounded-lg px-3 py-2 sm:col-span-2">
+          <select id="sjCurriculum" class="border border-slate-200 rounded-lg px-3 py-2">
+            <option value="">หลักสูตร</option><option value="68">68</option><option value="51">51</option>
+          </select>
+          <input id="sjLevel" placeholder="ระดับชั้น เช่น ป.1" class="border border-slate-200 rounded-lg px-3 py-2">
+          <input id="sjHours" placeholder="ชั่วโมง เช่น 160" class="border border-slate-200 rounded-lg px-3 py-2">
+          <button onclick="addSubject()" class="bg-brand-600 hover:bg-brand-700 text-white rounded-lg px-4 py-2 font-medium">เพิ่มวิชา</button>
+        </div>
+        <input id="sjDesc" placeholder="คำอธิบาย (ไม่บังคับ)" class="border border-slate-200 rounded-lg px-3 py-2 w-full mt-3">
+      </div>
+      <div class="card rounded-2xl p-5">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-semibold text-brand-800">รายการวิชาทั้งหมด</h3>
+          <input id="sjSearch" oninput="renderSubjects()" placeholder="🔍 ค้นหา..." class="border border-slate-200 rounded-lg px-3 py-1.5 text-sm w-44">
+        </div>
+        <div id="subjectList" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3"></div>
+      </div>
+    </section>
+
+    <!-- ===== TAB: จัดการสื่อ (แผน) ===== -->
+    <section id="tab-plans" class="tab-panel hidden">
+      <div class="card rounded-2xl p-5 mb-5">
+        <div class="flex flex-wrap items-center gap-3 mb-4">
+          <label class="text-sm text-slate-600">ชั้น:</label>
+          <select id="planLevel" onchange="renderPlanSubjectSelect()" class="border border-slate-200 rounded-lg px-3 py-2"></select>
+          <label class="text-sm text-slate-600">วิชา:</label>
+          <select id="planSubject" onchange="renderPlans()" class="border border-slate-200 rounded-lg px-3 py-2 min-w-[240px]"></select>
+          <div class="flex gap-2 ml-auto">
+            <button onclick="downloadPlanTemplate()" class="bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm px-3 py-2 rounded-lg">📥 ฟอร์มตัวอย่าง</button>
+            <button onclick="$('planXlsx').click()" class="bg-blue-600 hover:bg-blue-700 text-white text-sm px-3 py-2 rounded-lg">📤 นำเข้า .xlsx/.csv</button>
+            <input id="planXlsx" type="file" accept=".xlsx,.xls,.csv" class="hidden" onchange="importPlans(this)">
+          </div>
+        </div>
+        <h3 class="font-semibold text-brand-800 mb-2">➕ เพิ่มสื่อรายวิชา (จากโฟลเดอร์ Drive)</h3>
+        <div class="grid sm:grid-cols-12 gap-3">
+          <input id="plFolder" placeholder="ID หรือลิงก์โฟลเดอร์ Drive ที่เก็บสื่อวิชานี้ (plan1.html, plan2.html, ...) *" class="border border-slate-200 rounded-lg px-3 py-2 sm:col-span-10">
+          <button onclick="importFromFolder()" class="bg-brand-600 hover:bg-brand-700 text-white rounded-lg px-3 py-2 font-medium sm:col-span-2">นำเข้าทั้งวิชา</button>
+        </div>
+        <p class="text-xs text-slate-400 mt-2">ระบบจะสแกนไฟล์ plan ทุกตัวในโฟลเดอร์ · แผนที่มีอยู่แล้วจะอัปเดตลิงก์ทับ · แผนใหม่จะเพิ่มให้อัตโนมัติ</p>
+      </div>
+      <div class="card rounded-2xl p-5">
+        <h3 class="font-semibold text-brand-800 mb-3">รายการสื่อในวิชานี้</h3>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead><tr class="text-left text-slate-500 border-b">
+              <th class="py-2 w-16">แผนที่</th><th class="py-2">ชื่อแผน</th><th class="py-2">ลิ้งสื่อ</th><th class="py-2 w-24 text-right">จัดการ</th>
+            </tr></thead>
+            <tbody id="planList"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TAB: จัดการสิทธิ์ ===== -->
+    <section id="tab-access" class="tab-panel hidden">
+      <div class="card rounded-2xl p-5 mb-5">
+        <div class="flex flex-wrap items-center gap-3 mb-4">
+          <label class="text-sm text-slate-600">ชั้น:</label>
+          <select id="accLevel" onchange="renderAccessSubjectSelect()" class="border border-slate-200 rounded-lg px-3 py-2"></select>
+          <label class="text-sm text-slate-600">วิชา:</label>
+          <select id="accSubject" onchange="renderAccess()" class="border border-slate-200 rounded-lg px-3 py-2 min-w-[240px]"></select>
+          <button onclick="importCatalog()" class="ml-auto bg-brand-50 hover:bg-brand-100 text-brand-700 text-sm px-3 py-2 rounded-lg">📚 นำเข้าวิชาจากระบบขาย</button>
+          <button onclick="openSyncModal()" class="bg-amber2-500 hover:bg-amber2-600 text-white text-sm px-3 py-2 rounded-lg">🔄 ซิงค์สิทธิ์จากคำสั่งซื้อ</button>
+        </div>
+        <h3 class="font-semibold text-brand-800 mb-2">➕ ให้สิทธิ์ด้วย Gmail</h3>
+        <p class="text-xs text-slate-500 mb-2">ใส่หลายอีเมลได้ คั่นด้วยเครื่องหมายจุลภาค เว้นวรรค หรือขึ้นบรรทัดใหม่</p>
+        <textarea id="accEmails" rows="2" placeholder="customer1@gmail.com, customer2@gmail.com" class="border border-slate-200 rounded-lg px-3 py-2 w-full"></textarea>
+        <div class="flex flex-wrap items-center gap-3 mt-3">
+          <label class="text-sm text-slate-600">วันหมดอายุ (ไม่บังคับ):</label>
+          <input id="accExpire" type="date" class="border border-slate-200 rounded-lg px-3 py-2">
+          <button onclick="addAccess()" class="bg-brand-600 hover:bg-brand-700 text-white rounded-lg px-4 py-2 font-medium">เพิ่มสิทธิ์</button>
+        </div>
+      </div>
+      <div class="card rounded-2xl p-5">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-semibold text-brand-800">รายชื่อผู้มีสิทธิ์</h3>
+          <input id="accSearch" oninput="renderAccess()" placeholder="🔍 ค้นหาอีเมล..." class="border border-slate-200 rounded-lg px-3 py-1.5 text-sm w-48">
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead><tr class="text-left text-slate-500 border-b">
+              <th class="py-2">Gmail</th><th class="py-2 w-28">ให้สิทธิ์</th><th class="py-2 w-28">หมดอายุ</th><th class="py-2 w-20">สถานะ</th><th class="py-2 w-16 text-right">ลบ</th>
+            </tr></thead>
+            <tbody id="accessList"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TAB: รายงานสรุป ===== -->
+    <section id="tab-report" class="tab-panel hidden">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-5">
+        <div class="card rounded-2xl p-5 text-center"><div class="text-3xl">📚</div><div id="rpSubjects" class="text-2xl font-bold text-brand-700 mt-1">-</div><div class="text-xs text-slate-500">วิชาทั้งหมด</div></div>
+        <div class="card rounded-2xl p-5 text-center"><div class="text-3xl">🎬</div><div id="rpPlans" class="text-2xl font-bold text-brand-700 mt-1">-</div><div class="text-xs text-slate-500">สื่อทั้งหมด</div></div>
+        <div class="card rounded-2xl p-5 text-center"><div class="text-3xl">🔑</div><div id="rpAccess" class="text-2xl font-bold text-brand-700 mt-1">-</div><div class="text-xs text-slate-500">สิทธิ์ทั้งหมด</div></div>
+        <div class="card rounded-2xl p-5 text-center"><div class="text-3xl">👥</div><div id="rpCustomers" class="text-2xl font-bold text-brand-700 mt-1">-</div><div class="text-xs text-slate-500">ลูกค้า (อีเมล)</div></div>
+      </div>
+      <div class="card rounded-2xl p-5">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-semibold text-brand-800">สรุปรายวิชา</h3>
+          <button onclick="loadReport()" class="text-sm text-brand-600 hover:text-brand-700">🔄 รีเฟรช</button>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead><tr class="text-left text-slate-500 border-b">
+              <th class="py-2">วิชา</th><th class="py-2">ระดับชั้น</th><th class="py-2 text-center w-24">สื่อ</th><th class="py-2 text-center w-24">สิทธิ์</th>
+            </tr></thead>
+            <tbody id="rpTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TAB: ตั้งค่าระบบ ===== -->
+    <section id="tab-settings" class="tab-panel hidden">
+      <div class="grid lg:grid-cols-2 gap-5">
+        <div class="card rounded-2xl p-5">
+          <h3 class="font-semibold text-brand-800 mb-4">🏷️ ข้อมูลเว็บไซต์</h3>
+          <div class="space-y-3">
+            <div>
+              <label class="text-sm text-slate-600">ตราสัญลักษณ์ (โลโก้)</label>
+              <div class="flex items-center gap-3 mt-1">
+                <img id="logoPreview" class="hidden h-16 w-16 rounded-xl object-cover border border-brand-100">
+                <button onclick="$('logoFile').click()" class="bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm px-3 py-2 rounded-lg">📁 เลือกรูป (จะถูกย่อ + อัปขึ้น Drive)</button>
+                <input id="logoFile" type="file" accept="image/*" class="hidden" onchange="handleLogo(this)">
+                <input id="setLogoURL" type="hidden">
+              </div>
+            </div>
+            <div><label class="text-sm text-slate-600">ชื่อเว็บไซต์</label>
+              <input id="setSiteName" class="w-full border border-slate-200 rounded-lg px-3 py-2 mt-1"></div>
+            <div><label class="text-sm text-slate-600">สโลแกน</label>
+              <input id="setSlogan" class="w-full border border-slate-200 rounded-lg px-3 py-2 mt-1"></div>
+            <div><label class="text-sm text-slate-600">ลิงก์ติดต่อ (เพจ/Line — แสดงเมื่อลูกค้าไม่มีสิทธิ์)</label>
+              <input id="setContact" placeholder="https://facebook.com/..." class="w-full border border-slate-200 rounded-lg px-3 py-2 mt-1"></div>
+            <button onclick="saveSiteSettings()" class="w-full bg-brand-600 hover:bg-brand-700 text-white rounded-lg py-2.5 font-medium mt-2">💾 บันทึกข้อมูลเว็บไซต์</button>
+          </div>
+        </div>
+
+        <div class="card rounded-2xl p-5 self-start">
+          <h3 class="font-semibold text-brand-800 mb-4">🔐 ความปลอดภัย</h3>
+          <label class="text-sm text-slate-600">เปลี่ยน PIN ผู้ดูแล</label>
+          <input id="newPin" type="password" placeholder="PIN ใหม่ (อย่างน้อย 4 ตัว)" class="w-full border border-slate-200 rounded-lg px-3 py-2 mt-1">
+          <button onclick="changePin()" class="w-full bg-amber2-500 hover:bg-amber2-600 text-white rounded-lg py-2.5 font-medium mt-3">เปลี่ยน PIN</button>
+          <p class="text-xs text-slate-400 mt-3">เก็บ PIN ไว้เป็นความลับ ผู้ที่ทราบ PIN จะจัดการข้อมูลทั้งหมดได้</p>
+        </div>
+      </div>
+
+      <div class="card rounded-2xl p-5 mt-5">
+        <h3 class="font-semibold text-brand-800 mb-3">🔄 ซิงค์สิทธิ์อัตโนมัติจากระบบขาย</h3>
+        <div id="autoSyncStatus" class="text-sm bg-slate-50 rounded-lg p-3 mb-3">กำลังตรวจสอบสถานะ...</div>
+        <div class="flex flex-wrap items-center gap-3">
+          <label class="text-sm text-slate-600">ความถี่:</label>
+          <select id="autoSyncMinutes" class="border border-slate-200 rounded-lg px-3 py-2">
+            <option value="5">ทุก 5 นาที</option>
+            <option value="10" selected>ทุก 10 นาที</option>
+            <option value="15">ทุก 15 นาที</option>
+            <option value="30">ทุก 30 นาที</option>
+          </select>
+          <button onclick="enableAutoSync()" class="bg-brand-600 hover:bg-brand-700 text-white rounded-lg px-4 py-2 font-medium">เปิด / อัปเดต</button>
+          <button onclick="disableAutoSync()" class="bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg px-4 py-2">ปิด</button>
+        </div>
+        <p class="text-xs text-slate-400 mt-3">แต่ละรอบระบบจะ <b>นำเข้าวิชาใหม่จากระบบขาย</b> แล้วดึงคำสั่งซื้อสถานะ "ส่งแผนเสร็จสิ้น" มาให้สิทธิ์อัตโนมัติตามความถี่ที่ตั้ง (กันซ้ำให้ทั้งวิชาและสิทธิ์)</p>
+      </div>
+    </section>
+
+    <!-- ===== TAB: คู่มือ ===== -->
+    <section id="tab-manual" class="tab-panel hidden">
+      <div class="card rounded-2xl p-6 max-w-3xl">
+        <h3 class="font-display text-xl text-brand-800 mb-4">📖 คู่มือการใช้งาน</h3>
+
+        <details class="mb-4 border border-amber-200 bg-amber-50 rounded-xl p-4">
+          <summary class="font-semibold text-amber-800 cursor-pointer">🛟 Runbook แก้ปัญหาเร็ว (เปิดอ่านเมื่อมีเหตุ)</summary>
+          <div class="text-sm text-slate-700 mt-3 space-y-3">
+            <div><b>① ลูกค้าแจ้ง "เปิดสื่อไม่ได้"</b>
+              <ol class="list-decimal ml-5 mt-1 space-y-0.5">
+                <li>ให้ลูกค้ารีเฟรช (Ctrl+Shift+R) แล้วลองใหม่ — ถ้าหายจบ</li>
+                <li>เปิดชีต → เมนู 🎓 ครูพร้อมสื่อ → 🔧 ซ่อมลิงก์สื่อ → เลือกชั้น → เลือกวิชานั้น → รอสรุปแล้วให้ลูกค้าลองอีกครั้ง</li>
+                <li>ยังไม่ได้: เปิด Apps Script → Executions ดู error ล่าสุด แล้วแคปมาปรึกษา</li>
+              </ol></div>
+            <div><b>② ข้อมูลชีตพัง/ลบผิด</b>
+              <ol class="list-decimal ml-5 mt-1 space-y-0.5">
+                <li>เปิด Drive → โฟลเดอร์ <b>ครูพร้อมสื่อ_Backups</b> → ดาวน์โหลดไฟล์ .json ล่าสุด (มีย้อนหลัง 14 คืน)</li>
+                <li>เข้าหน้าผู้ดูแลเว็บ → ปุ่ม <b>นำเข้า</b> → เลือกไฟล์นั้น → ระบบกู้คืนทั้งหมด</li>
+              </ol></div>
+            <div><b>③ เพิ่มวิชาใหม่ครบวงจร</b>
+              <ol class="list-decimal ml-5 mt-1 space-y-0.5">
+                <li>อัปโฟลเดอร์สื่อใน Drive (plan1.html...) ตามโครงสร้างชั้น</li>
+                <li>เมนู ⚡ ลงทะเบียน+อัปสื่อ+ปก → เลือกชั้น (หรือหน้าเว็บ: จัดการสื่อ → นำเข้าทั้งวิชาจากโฟลเดอร์)</li>
+                <li>🖼️ จับคู่ภาพปกอัตโนมัติ → 🔄 ซิงค์สิทธิ์ → เช็คหน้าเว็บลูกค้า</li>
+              </ol></div>
+            <div><b>④ แก้โค้ดแล้วไม่เห็นผล</b> — เช็คเลขเวอร์ชันท้ายหน้าเว็บ ต้องตรงกับใน "สถานะระบบ" ของชีต ถ้าไม่ตรง = ยังไม่ได้ Redeploy (Deploy → Manage deployments → ✏️ → New version) หรือยังไม่ push GitHub / ไม่ได้ Ctrl+Shift+R</div>
+          </div>
+        </details>
+
+        <h4 class="font-semibold text-brand-700 mt-2">สำหรับผู้ดูแล (เจ้าของระบบ)</h4>
+        <ol class="list-decimal ml-5 text-sm text-slate-600 space-y-1 mt-2">
+          <li><b>จัดการวิชา</b> — เพิ่มวิชาที่เปิดขาย (เช่น คณิตศาสตร์ ป.1)</li>
+          <li><b>จัดการสื่อ</b> — เลือกวิชา แล้วเพิ่มลิงก์สื่อแต่ละแผน (URL จาก Apps Script) หรือ นำเข้าทีเดียวจากไฟล์ .xlsx/.csv</li>
+          <li><b>จัดการสิทธิ์</b> — เลือกวิชา ใส่ Gmail ของลูกค้าที่ซื้อ (ใส่หลายอีเมลพร้อมกันได้) กำหนดวันหมดอายุได้</li>
+          <li><b>ซิงค์จากคำสั่งซื้อ</b> — ถ้าตั้งค่า CONFIG เชื่อมชีตคำสั่งซื้อแล้ว กดเพื่อดึงสิทธิ์อัตโนมัติ (กดพรีวิวก่อนได้)</li>
+          <li><b>สำรองข้อมูล</b> สม่ำเสมอ เผื่อกู้คืนภายหลัง</li>
+        </ol>
+
+        <h4 class="font-semibold text-brand-700 mt-5">สำหรับลูกค้า</h4>
+        <p class="text-sm text-slate-600 mt-1">เข้าเว็บ → กรอก Gmail ที่ใช้สั่งซื้อ → เห็นเฉพาะวิชาที่ตนมีสิทธิ์ → กด "เปิดสื่อ" ได้ทุกอุปกรณ์</p>
+
+        <h4 class="font-semibold text-brand-700 mt-5">การเชื่อมชีตคำสั่งซื้อ (CONFIG ใน Code.gs)</h4>
+        <ol class="list-decimal ml-5 text-sm text-slate-600 space-y-1 mt-2">
+          <li>ใส่ <code class="bg-slate-100 px-1 rounded">ORDER_SHEET_ID</code> และชื่อแท็บ</li>
+          <li>แก้ <code class="bg-slate-100 px-1 rounded">ORDER_COL</code> ให้ตรงชื่อคอลัมน์จริง (อีเมล/สินค้า/สถานะ)</li>
+          <li>จับคู่ชื่อสินค้า → รหัสวิชา ใน <code class="bg-slate-100 px-1 rounded">PRODUCT_TO_SUBJECT</code></li>
+        </ol>
+
+        <h4 class="font-semibold text-brand-700 mt-5">วิธี Deploy เป็น Web App</h4>
+        <ol class="list-decimal ml-5 text-sm text-slate-600 space-y-1 mt-2">
+          <li>สร้าง Google Sheet ใหม่ → เมนู <b>ส่วนขยาย (Extensions) → Apps Script</b></li>
+          <li>วางโค้ด <b>Code.gs</b> และสร้างไฟล์ HTML ชื่อ <b>index</b> วางโค้ด index.html</li>
+          <li>กด <b>การทำให้ใช้งานได้ (Deploy) → การทำให้ใช้งานใหม่ → เลือกชนิด: เว็บแอป</b></li>
+          <li>ดำเนินการในชื่อ: <b>ฉัน (Me)</b> · ผู้มีสิทธิ์เข้าถึง: <b>ทุกคน (Anyone)</b></li>
+          <li>คัดลอก <b>Web App URL</b> ไปแชร์ให้ลูกค้า</li>
+          <li>อัปเดตโค้ดทุกครั้ง: การทำให้ใช้งานได้ → จัดการการทำให้ใช้งานได้ → ✏️ แก้ไข → เวอร์ชัน: ใหม่ → ใช้งาน</li>
+        </ol>
+
+        <div class="mt-5 text-xs text-amber2-600 bg-amber2-400/10 rounded-lg p-3">
+          ⚠️ หมายเหตุความปลอดภัย: ระบบนี้คุม "การมองเห็น" ลิงก์ หากลูกค้านำลิงก์สื่อ (URL สาธารณะ) ไปแชร์ต่อ ผู้อื่นยังเปิดได้ หากต้องการล็อกระดับลิงก์จริง ต้องเพิ่มการตรวจสิทธิ์ในไฟล์สื่อด้วย
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-brand-100 bg-white/60 py-4 px-4 text-center text-[11px] sm:text-xs text-slate-500 leading-relaxed">
+    Copyright © เพจครูพร้อมสอน. All Rights Reserved.
+    <div class="verline text-[10px] text-slate-400 mt-1"></div>
+  </footer>
+</div>
+
+<!-- ============================================================= -->
+<!-- ========================  MODALS  =========================== -->
+<!-- ============================================================= -->
+<!-- Admin PIN -->
+<div id="m-pin" class="modal fixed inset-0 z-[95] hidden items-center justify-center bg-black/40 p-4">
+  <div class="bg-white rounded-2xl p-6 w-full max-w-sm fade-up">
+    <h3 class="font-semibold text-brand-800 text-lg mb-3">🔐 เข้าสู่ระบบผู้ดูแล</h3>
+    <input id="pinInput" type="password" placeholder="กรอก PIN" class="w-full border border-slate-200 rounded-xl px-4 py-3 text-center text-lg tracking-widest"
+           onkeydown="if(event.key==='Enter')adminLogin()">
+    <div class="flex gap-2 mt-4">
+      <button onclick="closeModal('m-pin')" class="flex-1 bg-slate-100 hover:bg-slate-200 rounded-xl py-2.5">ยกเลิก</button>
+      <button onclick="adminLogin()" class="flex-1 bg-brand-600 hover:bg-brand-700 text-white rounded-xl py-2.5 font-medium">เข้าสู่ระบบ</button>
+    </div>
+  </div>
+</div>
+
+<!-- Clear confirm -->
+<div id="m-clear" class="modal fixed inset-0 z-[95] hidden items-center justify-center bg-black/40 p-4">
+  <div class="bg-white rounded-2xl p-6 w-full max-w-sm fade-up border-t-4 border-red-500">
+    <h3 class="font-semibold text-red-600 text-lg mb-2">🗑️ ล้างข้อมูลทั้งหมด</h3>
+    <p class="text-sm text-slate-600 mb-3">การกระทำนี้จะลบ <b>วิชา / สื่อ / สิทธิ์</b> ทั้งหมด (ตั้งค่าระบบไม่ถูกลบ) และกู้คืนไม่ได้ พิมพ์ <b>ยืนยัน</b> เพื่อดำเนินการ</p>
+    <input id="clearInput" placeholder='พิมพ์คำว่า ยืนยัน' class="w-full border border-red-200 rounded-xl px-4 py-3 text-center">
+    <div class="flex gap-2 mt-4">
+      <button onclick="closeModal('m-clear')" class="flex-1 bg-slate-100 hover:bg-slate-200 rounded-xl py-2.5">ยกเลิก</button>
+      <button onclick="doClear()" class="flex-1 bg-red-600 hover:bg-red-700 text-white rounded-xl py-2.5 font-medium">ล้างข้อมูล</button>
+    </div>
+  </div>
+</div>
+
+<!-- Generic edit (subject / plan) -->
+<div id="m-edit" class="modal fixed inset-0 z-[95] hidden items-center justify-center bg-black/40 p-4">
+  <div class="bg-white rounded-2xl p-6 w-full max-w-md fade-up">
+    <h3 id="editTitle" class="font-semibold text-brand-800 text-lg mb-3">แก้ไข</h3>
+    <div id="editBody" class="space-y-3"></div>
+    <div class="flex gap-2 mt-4">
+      <button onclick="closeModal('m-edit')" class="flex-1 bg-slate-100 hover:bg-slate-200 rounded-xl py-2.5">ยกเลิก</button>
+      <button id="editSaveBtn" class="flex-1 bg-brand-600 hover:bg-brand-700 text-white rounded-xl py-2.5 font-medium">บันทึก</button>
+    </div>
+  </div>
+</div>
+
+<!-- Sync -->
+<div id="m-sync" class="modal fixed inset-0 z-[95] hidden items-center justify-center bg-black/40 p-4">
+  <div class="bg-white rounded-2xl p-6 w-full max-w-md fade-up border-t-4 border-amber2-500">
+    <h3 class="font-semibold text-amber2-600 text-lg mb-2">🔄 ซิงค์สิทธิ์จากชีตคำสั่งซื้อ</h3>
+    <p class="text-sm text-slate-600 mb-3">ระบบจะอ่านชีตคำสั่งซื้อ (ตั้งค่าใน CONFIG ของ Code.gs) แล้วเพิ่มสิทธิ์ตามที่จับคู่ไว้</p>
+    <div id="syncResult" class="text-sm bg-slate-50 rounded-lg p-3 mb-3 hidden"></div>
+    <div class="flex gap-2">
+      <button onclick="runSync(true)"  class="flex-1 bg-slate-100 hover:bg-slate-200 rounded-xl py-2.5">👁️ พรีวิว</button>
+      <button onclick="runSync(false)" class="flex-1 bg-amber2-500 hover:bg-amber2-600 text-white rounded-xl py-2.5 font-medium">เพิ่มสิทธิ์จริง</button>
+    </div>
+    <button onclick="closeModal('m-sync')" class="w-full text-slate-500 text-sm mt-3">ปิด</button>
+  </div>
+</div>
+
+<script>
+/* ===================== Helpers ===================== */
+const $ = id => document.getElementById(id);
+let ADMIN_PIN = '';
+let SUBJECTS_CACHE = [];
+
+function showLoading(msg){ $('loadingMsg').textContent = msg||'กำลังโหลด...'; $('loading').classList.remove('hidden'); $('loading').classList.add('flex'); }
+function hideLoading(){ $('loading').classList.add('hidden'); $('loading').classList.remove('flex'); }
+function toast(msg, type){
+  const c = $('toast'); const el = document.createElement('div');
+  const color = type==='error' ? 'bg-red-600' : (type==='warn'?'bg-amber2-500':'bg-brand-600');
+  el.className = `${color} text-white px-4 py-2.5 rounded-xl shadow-lg text-sm fade-up max-w-xs`;
+  el.textContent = msg; c.appendChild(el);
+  setTimeout(()=>{ el.style.transition='opacity .3s'; el.style.opacity='0'; setTimeout(()=>el.remove(),300); }, 3200);
+}
+function openModal(id){ $(id).classList.remove('hidden'); $(id).classList.add('flex'); }
+function closeModal(id){ $(id).classList.add('hidden'); $(id).classList.remove('flex'); }
+function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+/* เรียก GAS REST API ผ่าน fetch (ใช้ text/plain เพื่อเลี่ยง CORS preflight)
+   call site เดิมไม่ต้องแก้ — แปลง argument ตามลำดับเป็น payload ให้อัตโนมัติ */
+const ARG_MAP = {
+  getSettings:[], getMyContent:['email','token'], requestOtp:['email'], verifyOtp:['email','code','device'], adminLogin:['pin'],
+  getSubjects:['pin'], addSubject:['pin','data'], updateSubject:['pin','id','data'], deleteSubject:['pin','id'],
+  getPlans:['pin','subjectId'], addPlan:['pin','data'], updatePlan:['pin','id','data'], deletePlan:['pin','id'],
+  bulkImportPlans:['pin','subjectId','rows'],
+  importPlansFromFolder:['pin','subjectId','folder'],
+  getSubjectPlans:['email','token','subjectId'], getSubjectFiles:['email','token','subjectId'],
+  prepDocPreview:['email','token','subjectId','fileId'], getMediaContent:['email','token','subjectId','planNo'],
+  getCategoryZip:['email','token','subjectId','cat'],
+  getAccess:['pin','subjectId'], addAccess:['pin','subjectId','emails','expire'], updateAccess:['pin','id','data'], deleteAccess:['pin','id'],
+  syncFromOrders:['pin','dryRun'], getReportData:['pin'],
+  importSubjectsFromOrderCatalog:['pin'],
+  enableAutoSync:['pin','minutes'], disableAutoSync:['pin'], getAutoSyncStatus:['pin'],
+  backupAllData:['pin'], importBackupData:['pin','json'], clearAllData:['pin','confirmText'],
+  uploadImageToDrive:['pin','base64','filename'], saveSettings:['pin','data']
+};
+async function gas(action){
+  const args = Array.prototype.slice.call(arguments, 1);
+  const keys = ARG_MAP[action] || [];
+  const payload = { action };
+  keys.forEach((k,i)=>{ payload[k] = args[i]; });
+  const res = await fetch(API_URL, {
+    method:'POST',
+    headers:{ 'Content-Type':'text/plain;charset=utf-8' },
+    body: JSON.stringify(payload)
+  });
+  return res.json();
+}
+
+/* ===================== สถานะการเชื่อมต่อ ===================== */
+async function checkConnection(){
+  try{
+    const res = await gas('getSettings');
+    if(res && res.ok){
+      $('connDot').className='w-2 h-2 rounded-full bg-green-500 blink';
+      const d = res.data || {};
+      $('connText').textContent = d.edge ? '⚡ เชื่อมต่อผ่าน Cloudflare Edge (Online Mode)' : '☁️ เชื่อมต่อ Google Sheets (Online Mode)';
+      document.querySelectorAll('.verline').forEach(el=>{ el.textContent = 'เวอร์ชัน UI ' + UI_VERSION + ' · ระบบ ' + (d.version || '-'); });
+      if(d.siteName) $('custTitle').textContent = d.siteName;
+      if(d.slogan)   $('custSlogan').textContent = d.slogan;
+      if(d.logoURL){ $('custLogo').src = d.logoURL; $('custLogo').classList.remove('hidden'); $('custLogoFallback').classList.add('hidden'); }
+      window._contactLink = d.contactLink || '';
+    }
+  }catch(e){
+    $('connText').textContent='⚠️ เชื่อมต่อไม่สำเร็จ';
+  }
+}
+
+/* ===================== ฝั่งลูกค้า ===================== */
+/* จำอีเมล (localStorage — กันพังเมื่อพรีวิว) */
+function saveEmail_(e){ try{ localStorage.setItem('kps_email', e); }catch(_){ } }
+function getEmail_(){ try{ return localStorage.getItem('kps_email')||''; }catch(_){ return ''; } }
+function clearEmail_(){ try{ localStorage.removeItem('kps_email'); }catch(_){ } }
+function saveContent_(j){ try{ localStorage.setItem('kps_content', j); }catch(_){ } }   // จำวิชาล่าสุด → เปิดหน้าปุ๊บแสดงทันที
+function getContent_(){ try{ return localStorage.getItem('kps_content')||''; }catch(_){ return ''; } }
+function clearContent_(){ try{ localStorage.removeItem('kps_content'); }catch(_){ } }
+function saveToken_(t){ try{ localStorage.setItem('kps_token', t); }catch(_){ } }
+function getToken_(){ try{ return localStorage.getItem('kps_token')||''; }catch(_){ return ''; } }
+function clearToken_(){ try{ localStorage.removeItem('kps_token'); }catch(_){ } }
+/* ---------- คลังสื่อออฟไลน์ (IndexedDB) ---------- */
+function idb_(){ return new Promise((res,rej)=>{ const r=indexedDB.open('kps_media',1);
+  r.onupgradeneeded=()=>{ r.result.createObjectStore('media'); };
+  r.onsuccess=()=>res(r.result); r.onerror=()=>rej(r.error); }); }
+async function idbGet_(k){ try{ const db=await idb_(); return await new Promise((res)=>{ const t=db.transaction('media').objectStore('media').get(k); t.onsuccess=()=>res(t.result||null); t.onerror=()=>res(null); }); }catch(_){ return null; } }
+async function idbPut_(k,v){ try{ const db=await idb_(); return await new Promise((res)=>{ const t=db.transaction('media','readwrite').objectStore('media').put(v,k); t.onsuccess=()=>res(true); t.onerror=()=>res(false); }); }catch(_){ return false; } }
+async function idbDel_(k){ try{ const db=await idb_(); return await new Promise((res)=>{ const t=db.transaction('media','readwrite').objectStore('media').delete(k); t.onsuccess=()=>res(true); t.onerror=()=>res(false); }); }catch(_){ return false; } }
+async function idbKeys_(){ try{ const db=await idb_(); return await new Promise((res)=>{ const t=db.transaction('media').objectStore('media').getAllKeys(); t.onsuccess=()=>res(t.result||[]); t.onerror=()=>res([]); }); }catch(_){ return []; } }
+/* ลบสื่อออฟไลน์ของวิชาที่ไม่มีสิทธิ์แล้ว (รันเงียบๆ หลังซิงค์) */
+async function cleanupOffline_(ownedIds){
+  try{
+    const keys = await idbKeys_();
+    for(const k of keys){ const sid=String(k).split('|')[0]; if(!ownedIds.includes(sid)) await idbDel_(k); }
+    Object.keys(localStorage).filter(x=>x.startsWith('kps_sp_')||x.startsWith('kps_sf_')||x.startsWith('kps_off_'))
+      .forEach(x=>{ const sid=x.replace(/^kps_(sp|sf|off)_/,''); if(!ownedIds.includes(sid)) localStorage.removeItem(x); });
+  }catch(_){ }
+}
+if('serviceWorker' in navigator){ window.addEventListener('load',()=>{ navigator.serviceWorker.register('./sw.js').catch(()=>{}); }); }
+
+function deviceName_(){
+  const ua = navigator.userAgent;
+  const br = /Edg\//.test(ua)?'Edge':/Chrome\//.test(ua)?'Chrome':/Safari\//.test(ua)?'Safari':/Firefox\//.test(ua)?'Firefox':'Browser';
+  const os = /Android/i.test(ua)?'Android':/iPhone|iPad/i.test(ua)?'iOS':/Windows/i.test(ua)?'Windows':/Mac/i.test(ua)?'Mac':'อุปกรณ์';
+  return os+' · '+br;
+}
+let OTP_EMAIL='', OTP_TIMER=null;
+async function startOtp(email){
+  OTP_EMAIL = email;
+  $('otpMail').textContent = email;
+  $('loginBox').classList.remove('hidden'); $('contentBox').classList.add('hidden');
+  showLoading('กำลังส่งรหัสไปที่อีเมล...');
+  try{
+    const res = await gas('requestOtp', email);
+    if(!res.ok){ toast(res.error,'error'); return; }
+    $('otpBox').classList.remove('hidden');
+    $('otpCode').value=''; setTimeout(()=>$('otpCode').focus(),100);
+    startResendCountdown_();
+    toast('ส่งรหัสแล้ว เช็คอีเมลของคุณ');
+  }catch(e){ toast('เชื่อมต่อไม่ได้: '+e.message,'error'); }
+  finally{ hideLoading(); }
+}
+function startResendCountdown_(){
+  const btn=$('otpResend'); let n=60;
+  btn.disabled=true; btn.textContent='ส่งรหัสอีกครั้ง (รอ '+n+' วิ)';
+  clearInterval(OTP_TIMER);
+  OTP_TIMER=setInterval(()=>{ n--; if(n<=0){ clearInterval(OTP_TIMER); btn.disabled=false; btn.textContent='ส่งรหัสอีกครั้ง'; } else btn.textContent='ส่งรหัสอีกครั้ง (รอ '+n+' วิ)'; },1000);
+}
+function resendOtp(){ if(OTP_EMAIL) startOtp(OTP_EMAIL); }
+async function submitOtp(){
+  const code = $('otpCode').value.trim();
+  if(code.length!==6){ toast('กรอกรหัส 6 หลัก','warn'); return; }
+  showLoading('กำลังยืนยัน...');
+  try{
+    const res = await gas('verifyOtp', OTP_EMAIL, code, deviceName_());
+    if(!res.ok){ toast(res.error,'error'); return; }
+    saveToken_(res.data.token);
+    saveEmail_(OTP_EMAIL);
+    $('otpBox').classList.add('hidden');
+    if(res.data.kicked) toast('ยืนยันสำเร็จ (อุปกรณ์เก่าสุดถูกออกจากระบบ เพราะครบจำนวนเครื่อง)','warn');
+    else toast('ยืนยันเครื่องนี้สำเร็จ ✅');
+    await customerLogin();          // โหลดวิชาด้วยบัตรผ่านใหม่
+  }catch(e){ toast('เชื่อมต่อไม่ได้: '+e.message,'error'); }
+  finally{ hideLoading(); }
+}
+
+/* การ์ดโครงร่างระหว่างรอโหลดครั้งแรก (ยังไม่มีข้อมูลที่จำไว้) */
+function renderSkeleton_(){
+  $('loginBox').classList.add('hidden');
+  const box = $('contentBox'); box.classList.remove('hidden');
+  box.innerHTML = '<div class="grid grid-cols-2 sm:grid-cols-3 gap-4">' +
+    Array(3).fill('<div class="card rounded-2xl overflow-hidden animate-pulse"><div class="w-full h-28 bg-slate-200"></div><div class="p-4 space-y-2"><div class="h-4 bg-slate-200 rounded w-2/3"></div><div class="h-3 bg-slate-100 rounded w-1/2"></div></div></div>').join('') + '</div>';
+}
+function restoreLogin_(){ if(!MY_DATA){ $('contentBox').classList.add('hidden'); $('contentBox').innerHTML=''; $('loginBox').classList.remove('hidden'); } }
+
+/* silent=true: รีเฟรชข้อมูลเบื้องหลังโดยไม่ขึ้นหน้าโหลด (ใช้หลังแสดงข้อมูลที่จำไว้แล้ว) */
+async function customerLogin(silent){
+  const email = silent ? getEmail_() : $('custEmail').value.trim();
+  if(!email){ if(!silent) toast('กรุณากรอกอีเมล','warn'); return; }
+  if(silent && !navigator.onLine) return;   // 📴 ออฟไลน์: ใช้ข้อมูลที่จำไว้ ไม่ต้องยิงเน็ต
+  if(!silent) showLoading('กำลังตรวจสอบสิทธิ์...');
+  try{
+    const res = await gas('getMyContent', email, getToken_());
+    if(!res.ok){
+      if(res.error==='NEED_OTP'){ if(silent){ restoreLogin_(); } else { startOtp(email); } return; }
+      if(!silent){ toast(res.error,'error'); restoreLogin_(); } return;
+    }
+    saveEmail_(res.data.email || email);  // จำอีเมลที่ใช้ login เสมอ จนกว่าจะกดออกจากระบบ
+    const j = JSON.stringify(res.data);
+    if(!silent || j !== getContent_()) renderCustomerContent(res.data);  // โหมดเงียบ: วาดใหม่เฉพาะเมื่อข้อมูลเปลี่ยน
+    saveContent_(j);
+    cleanupOffline_(res.data.subjects.map(x=>String(x.subjectId)));       // ล้างสื่อออฟไลน์ของวิชาที่ถูกถอนสิทธิ์
+  }catch(e){ if(!silent){ toast('เกิดข้อผิดพลาด: '+e.message,'error'); restoreLogin_(); } }
+  finally{ if(!silent) hideLoading(); }
+}
+
+let MY_DATA = null;
+let CUST_LEVEL = '';
+let CUST_QUERY = '';
+let SP_MEM = {};   // แผนต่อวิชา (in-memory)
+let SF_MEM = {};   // ไฟล์เอกสารต่อวิชา
+let CUR_TAB = 'media', CUR_UNIT = 0;
+
+function renderCustomerContent(d){
+  MY_DATA = d;
+  CUST_LEVEL = ''; CUST_QUERY = '';
+  $('loginBox').classList.add('hidden');
+  const box = $('contentBox'); box.classList.remove('hidden'); box.classList.add('fade-up');
+  if(!d.subjects.length){
+    box.innerHTML = `<div class="card rounded-2xl p-8 text-center">
+      <div class="text-4xl mb-2">🔒</div>
+      <h3 class="font-semibold text-brand-800">ยังไม่พบสิทธิ์เข้าถึง</h3>
+      <p class="text-sm text-slate-500 mt-1">อีเมล <b>${esc(d.email)}</b> ยังไม่มีวิชาที่เปิดให้เข้าถึง<br>กรุณาติดต่อเพจครูพร้อมสอน</p>
+      ${window._contactLink?`<a href="${esc(window._contactLink)}" target="_blank" rel="noopener" class="inline-block mt-3 bg-brand-600 hover:bg-brand-700 text-white text-sm px-4 py-2 rounded-lg">ติดต่อสอบถาม</a>`:''}
+      <div><button onclick="logoutCustomer()" class="mt-4 text-sm text-brand-600 underline">ลองอีเมลอื่น</button></div>
+    </div>`;
+    return;
+  }
+  routeCust_();
+}
+
+/* จำนวนสื่อ (รองรับข้อมูลเก่าที่จำไว้ก่อนอัป v11) */
+function mediaCount_(s){ return s.mediaCount!=null ? s.mediaCount : (s.plans?s.plans.length:0); }
+/* ปกใช้ร่วมทุกชั้นชื่อเดียวกัน: วิชาไหนปกว่าง ยืมปกวิชาชื่อเดียวกัน */
+function resolveCover_(s){
+  if(s.cover) return s.cover;
+  const t = MY_DATA.subjects.find(x=>x.name===s.name && x.cover);
+  return t ? t.cover : '';
+}
+function coverHtml_(s, big){
+  const cover = resolveCover_(s);
+  const cls = big ? 'w-full h-40 sm:h-44 object-cover' : 'w-full aspect-square object-cover';
+  if(cover) return `<img src="${esc(cover)}" class="${cls}" loading="lazy" decoding="async">`;
+  const init = esc(String(s.name||'📚').trim().charAt(0)) || '📚';
+  return `<div class="${big?'w-full h-40 sm:h-44':'w-full aspect-square'} flex items-center justify-center bg-gradient-to-br from-brand-300 to-brand-500 text-white text-4xl font-display">${init}</div>`;
+}
+
+/* ---------- เส้นทางหน้า (กด back ได้) ---------- */
+function routeCust_(){
+  if(!MY_DATA || !MY_DATA.subjects.length) return;
+  const m = location.hash.match(/^#s=(.+)$/);
+  if(m){
+    const sid = decodeURIComponent(m[1]);
+    const s = MY_DATA.subjects.find(x=>String(x.subjectId)===sid);
+    if(s){ renderSubjectPage(s); return; }
+  }
+  renderCustomerGrid();
+}
+window.addEventListener('hashchange', routeCust_);
+
+/* ---------- หน้ารวมวิชา ---------- */
+function renderCustomerGrid(){
+  const d = MY_DATA;
+  const levels = [...new Set(d.subjects.map(s=>String(s.level||'')).filter(x=>x))].sort((a,b)=>levelKey(a)-levelKey(b));
+  const match = s => (!CUST_LEVEL || String(s.level)===CUST_LEVEL) && (!CUST_QUERY || (String(s.name||'')+' '+String(s.level||'')+' '+String(s.curriculum||'')).toLowerCase().includes(CUST_QUERY.toLowerCase()));
+  const count = d.subjects.filter(match).length;
+  let html = `<div class="flex items-center justify-between mb-3 gap-2 flex-wrap">
+      <p class="text-sm text-slate-600">สวัสดี 👋 <b>${esc(d.email)}</b><span class="block text-xs text-slate-400">วิชาของคุณ ${d.subjects.length} วิชา${(CUST_LEVEL||CUST_QUERY)?` · แสดง ${count} วิชา`:''}</span></p>
+      <button onclick="logoutCustomer()" class="text-xs text-slate-400 hover:text-brand-600 underline">ออกจากระบบ</button>
+    </div>`;
+  if(levels.length>1 || d.subjects.length>6){
+    html += `<div class="flex items-center gap-2 mb-4 overflow-x-auto pb-1">
+      <button onclick="setCustLevel('')" class="text-xs px-3 py-1.5 rounded-full whitespace-nowrap ${CUST_LEVEL===''?'bg-brand-600 text-white':'bg-brand-50 text-brand-700'}">ทุกชั้น</button>
+      ${levels.map(l=>`<button onclick="setCustLevel('${esc(l)}')" class="text-xs px-3 py-1.5 rounded-full whitespace-nowrap ${CUST_LEVEL===l?'bg-brand-600 text-white':'bg-brand-50 text-brand-700'}">${esc(l)}</button>`).join('')}
+      ${d.subjects.length>6?`<input id="custSearch" value="${esc(CUST_QUERY)}" oninput="setCustQuery(this.value)" placeholder="🔍 ค้นหาวิชา..." class="text-xs border border-brand-100 rounded-full px-3 py-1.5 w-36 sm:w-44 flex-shrink-0">`:''}
+    </div>`;
+  }
+  html += `<div class="grid grid-cols-2 sm:grid-cols-3 gap-4">`;
+  d.subjects.forEach((s,i)=>{
+    if(!match(s)) return;
+    html += `<button onclick="gotoSubject(${i})" class="card rounded-2xl overflow-hidden text-left hover:shadow-lg transition group">
+      <div class="overflow-hidden">${coverHtml_(s,false)}</div>
+      <div class="p-3">
+        <div class="font-semibold text-brand-800 text-sm leading-snug">${esc(s.name)}</div>
+        <div class="text-xs text-slate-400 mt-1">${esc(s.level||'')}${s.hours?' · '+esc(s.hours)+' ชม.':''}${s.curriculum?' · หลักสูตร '+esc(s.curriculum):''}</div>
+        <div class="flex flex-wrap gap-1.5 mt-2 text-[11px]">
+          ${s.unitCount?`<span class="bg-brand-50 text-brand-700 rounded-full px-2 py-0.5">🗂️ ${s.unitCount} หน่วย</span>`:''}
+          <span class="bg-violet-50 text-violet-600 rounded-full px-2 py-0.5">🎬 ${mediaCount_(s)} สื่อ</span>
+          ${s.hasDocs?`<span class="bg-amber-50 text-amber-600 rounded-full px-2 py-0.5">📁 เอกสาร</span>`:''}
+        </div>
+      </div>
+    </button>`;
+  });
+  html += `</div>`;
+  $('contentBox').innerHTML = html;
+  window.scrollTo(0,0);
+}
+function gotoSubject(i){ const s=MY_DATA.subjects[i]; location.hash = 's='+encodeURIComponent(s.subjectId); }
+function setCustLevel(l){ CUST_LEVEL = l; renderCustomerGrid(); }
+function setCustQuery(q){ CUST_QUERY = q; renderCustomerGrid(); const el=$('custSearch'); if(el){ el.focus(); el.setSelectionRange(el.value.length, el.value.length); } }
+
+/* ---------- หน้าวิชา (2 แท็บ) ---------- */
+function renderSubjectPage(s){
+  CUR_TAB='media'; CUR_UNIT=0;
+  $('contentBox').innerHTML = `
+   <button onclick="location.hash=''" class="text-sm text-brand-600 hover:text-brand-700 mb-3">← กลับหน้ารวมวิชา</button>
+   <div class="card rounded-2xl overflow-hidden mb-4">
+     <div class="bg-gradient-to-r from-brand-700 to-emerald-500 text-white p-4 sm:p-5">
+       <div class="flex items-center gap-4">
+         <div class="w-16 h-16 rounded-xl overflow-hidden bg-white/15 flex-shrink-0">${coverHtml_(s,false).replace('aspect-square','h-16')}</div>
+         <div class="min-w-0">
+           <h2 class="text-xl font-bold truncate">${esc(s.name)}</h2>
+           <p class="text-emerald-100 text-sm">${esc(s.level||'')}${s.hours?' · '+esc(s.hours)+' ชม.':''}${s.curriculum?' · หลักสูตร '+esc(s.curriculum):''}</p>
+         </div>
+       </div>
+       <div class="flex gap-2 mt-4">
+         <button id="tabMedia" onclick="switchSubTab('media')" class="px-4 py-2 rounded-xl bg-white text-brand-700 font-bold text-sm">🎬 สื่อการสอน</button>
+         ${s.hasDocs?`<button id="tabDocs" onclick="switchSubTab('docs')" class="px-4 py-2 rounded-xl bg-white/15 text-white font-semibold text-sm">📁 ไฟล์เอกสาร</button>`:''}
+       </div>
+     </div>
+   </div>
+   <div id="paneMedia"><div class="text-center text-slate-400 py-8 text-sm">⏳ กำลังโหลดรายการสื่อ…</div></div>
+   <div id="paneDocs" class="hidden"></div>`;
+  window.scrollTo(0,0);
+  loadPlans_(s);
+}
+function switchSubTab(t){
+  CUR_TAB=t;
+  const m = t==='media';
+  $('paneMedia').classList.toggle('hidden',!m);
+  $('paneDocs').classList.toggle('hidden',m);
+  const tm=$('tabMedia'), td=$('tabDocs');
+  if(tm) tm.className = m?'px-4 py-2 rounded-xl bg-white text-brand-700 font-bold text-sm':'px-4 py-2 rounded-xl bg-white/15 text-white font-semibold text-sm';
+  if(td) td.className = !m?'px-4 py-2 rounded-xl bg-white text-brand-700 font-bold text-sm':'px-4 py-2 rounded-xl bg-white/15 text-white font-semibold text-sm';
+  if(!m){ const sid=curSid_(); if(sid && !SF_MEM[sid]) loadDocs_(sid); }
+}
+function curSid_(){ const m=location.hash.match(/^#s=(.+)$/); return m?decodeURIComponent(m[1]):''; }
+
+/* โหลดรายการแผน: จากที่จำไว้ก่อน แล้วรีเฟรชเงียบๆ */
+async function loadPlans_(s){
+  const sid = String(s.subjectId);
+  const ck = 'kps_sp_'+sid;
+  let cached=null; try{ cached = JSON.parse(localStorage.getItem(ck)||'null'); }catch(_){ }
+  if(cached){ SP_MEM[sid]=cached; renderPlansPane_(s, cached); }
+  try{
+    const res = await gas('getSubjectPlans', getEmail_(), getToken_(), sid);
+    if(res.ok){
+      SP_MEM[sid]=res.data.plans;
+      try{ localStorage.setItem(ck, JSON.stringify(res.data.plans)); }catch(_){ }
+      if(curSid_()===sid) renderPlansPane_(s, res.data.plans);
+    } else if(!cached && curSid_()===sid){ $('paneMedia').innerHTML = `<p class="text-center text-sm text-rose-500 py-6">${esc(res.error||'โหลดไม่สำเร็จ')}</p>`; }
+  }catch(e){ if(!cached && curSid_()===sid) $('paneMedia').innerHTML = `<p class="text-center text-sm text-rose-500 py-6">เชื่อมต่อไม่ได้: ${esc(e.message)}</p>`; }
+}
+function renderPlansPane_(s, plans){
+  const units = [...new Set(plans.map(p=>p.unit).filter(u=>u>0))].sort((a,b)=>a-b);
+  const sid = String(s.subjectId);
+  const off = localStorage.getItem('kps_off_'+sid);
+  let html=`<div class="flex justify-end mb-3">
+    <button id="offBtn" onclick="saveSubjectOffline('${esc(sid)}',this)"
+      class="text-xs font-semibold rounded-lg px-3.5 py-2 ${off?'bg-brand-50 text-brand-700 border border-brand-200':'bg-amber-400 hover:bg-amber-500 text-amber-900'}">
+      ${off?('✓ เก็บออฟไลน์แล้ว ('+off+' สื่อ) · กดเพื่ออัปเดต'):'⬇ เก็บทั้งวิชาไว้ใช้ออฟไลน์'}
+    </button></div>`;
+  if(units.length){
+    html += `<div class="flex flex-wrap gap-2 mb-4">
+      <button onclick="setUnit_(0)" class="text-xs px-3.5 py-1.5 rounded-lg font-bold ${CUR_UNIT===0?'bg-brand-600 text-white':'bg-white shadow-sm text-slate-600'}">ทั้งหมด</button>
+      ${units.map(u=>`<button onclick="setUnit_(${u})" class="text-xs px-3.5 py-1.5 rounded-lg font-bold ${CUR_UNIT===u?'bg-brand-600 text-white':'bg-white shadow-sm text-slate-600'}">หน่วย ${u}</button>`).join('')}
+    </div>`;
+  }
+  const list = plans.filter(p=>!CUR_UNIT || p.unit===CUR_UNIT);
+  if(!list.length){ html += `<p class="text-sm text-slate-400 text-center py-6">ยังไม่มีสื่อ${CUR_UNIT?('ในหน่วย '+CUR_UNIT):'ในวิชานี้'}</p>`; }
+  else{
+    html += `<div class="grid sm:grid-cols-2 gap-3">`+list.map(p=>`
+      <div class="card rounded-xl p-3.5 flex items-center gap-3">
+        ${p.unit?`<div class="w-9 h-9 rounded-lg bg-brand-50 text-brand-700 flex items-center justify-center font-extrabold text-sm flex-shrink-0">${p.unit}</div>`:''}
+        <div class="flex-1 min-w-0">
+          <div class="font-semibold text-slate-800 text-sm leading-snug">${p.no?`<span class="text-brand-600">แผน ${p.no}</span> · `:''}${esc(p.name||('แผนที่ '+p.no))}</div>
+          ${p.label?`<div class="text-[10px] text-violet-500 mt-0.5 truncate">🧠 ${esc(p.label)}</div>`:''}
+        </div>
+        <button onclick="openMediaTab('${esc(String(s.subjectId))}',${p.no},'${esc(String(p.name||'สื่อ')).replace(/'/g,"\\'")}')" class="bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-lg px-3.5 py-2 flex-shrink-0">เปิดสื่อ →</button>
+      </div>`).join('')+`</div>`;
+  }
+  $('paneMedia').innerHTML = html;
+}
+function setUnit_(u){ CUR_UNIT=u; const sid=curSid_(); const s=MY_DATA.subjects.find(x=>String(x.subjectId)===sid); if(s&&SP_MEM[sid]) renderPlansPane_(s, SP_MEM[sid]); }
+
+/* โหลดไฟล์เอกสาร */
+async function loadDocs_(sid){
+  $('paneDocs').innerHTML = `<div class="text-center text-slate-400 py-8 text-sm">⏳ กำลังโหลดรายการไฟล์…</div>`;
+  try{
+    const res = await gas('getSubjectFiles', getEmail_(), getToken_(), sid);
+    if(!res.ok){ $('paneDocs').innerHTML = `<p class="text-center text-sm text-rose-500 py-6">${esc(res.error||'โหลดไม่สำเร็จ')}</p>`; return; }
+    SF_MEM[sid]=res.data;
+    renderDocsPane_(sid, res.data);
+  }catch(e){ $('paneDocs').innerHTML = `<p class="text-center text-sm text-rose-500 py-6">เชื่อมต่อไม่ได้: ${esc(e.message)}</p>`; }
+}
+function renderDocsPane_(sid, data){
+  if(!data.cats || !data.cats.length){
+    $('paneDocs').innerHTML = `<p class="text-sm text-slate-400 text-center py-6">${data.noFolder?'วิชานี้ยังไม่ผูกโฟลเดอร์เอกสาร':'ยังไม่มีไฟล์เอกสาร'}</p>`;
+    return;
+  }
+  $('paneDocs').innerHTML = data.cats.map(c=>`
+    <section class="card rounded-2xl p-4 sm:p-5 mb-4">
+      <div class="flex items-center justify-between flex-wrap gap-2 mb-2">
+        <h3 class="font-bold text-brand-800">${/^ชุดเอกสาร/.test(c.name)?'📘':/^แบบทดสอบ/.test(c.name)?'📝':'🗂️'} ${esc(c.name)}</h3>
+        <button onclick="downloadCatZip('${esc(String(sid))}','${esc(c.name).replace(/'/g,"\\'")}',this)" class="bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-lg px-4 py-2">📦 โหลดทั้งหมวด (ZIP)</button>
+      </div>
+      <div class="divide-y divide-slate-100">
+        ${c.files.map(f=>`
+          <div class="flex items-center justify-between py-2.5 gap-3">
+            <span class="text-sm truncate">${/\.pdf$/i.test(f.name)?'📕':'📄'} ${esc(f.name)}</span>
+            <button onclick="openDocTab('${esc(String(sid))}','${esc(f.id)}','${esc(f.name).replace(/'/g,"\\'")}')" class="text-brand-700 bg-brand-50 hover:bg-brand-100 text-xs font-semibold rounded-lg px-3 py-1.5 flex-shrink-0">👁 เปิดดู</button>
+          </div>`).join('')}
+      </div>
+      <p class="text-[11px] text-slate-400 mt-3">💡 ไฟล์เป็น .zip — ถ้าเครื่องยังไม่มีโปรแกรมแตกไฟล์ <a href="https://www.win-rar.com/download.html" target="_blank" rel="noopener" class="text-brand-600 underline">ดาวน์โหลด WinRAR ที่นี่</a> แล้วคลิกขวาไฟล์ → "Extract Here"</p>
+    </section>`).join('');
+}
+
+
+/* 📦 โหลด ZIP รายหมวด (ครั้งแรกระบบสร้างไฟล์ อาจรอครู่หนึ่ง — ครั้งต่อไปได้ทันที) */
+async function downloadCatZip(sid, cat, btn){
+  const oldTxt = btn.textContent;
+  btn.disabled = true; btn.textContent = '⏳ กำลังเตรียมไฟล์…';
+  try{
+    const res = await gas('getCategoryZip', getEmail_(), getToken_(), sid, cat);
+    if(res.ok && res.data && res.data.url){
+      window.open(res.data.url, '_blank');
+      toast(`เริ่มดาวน์โหลด "${cat}" (${res.data.files} ไฟล์) แล้ว`);
+    } else toast((res&&res.error)||'สร้าง ZIP ไม่สำเร็จ','error');
+  }catch(e){ toast('เชื่อมต่อไม่ได้: '+e.message,'error'); }
+  finally{ btn.disabled = false; btn.textContent = oldTxt; }
+}
+
+/* ---------- เปิดสื่อ/เอกสาร: แท็บใหม่เต็มจอ ไม่มีลิงก์ให้แชร์ ---------- */
+async function openMediaTab(sid, no, title){
+  const w = window.open('', '_blank');
+  if(w){ try{ w.document.write('<!doctype html><meta charset="utf-8"><title>'+title+'</title><body style="font-family:sans-serif;text-align:center;color:#047857;margin-top:80px">⏳ กำลังโหลดสื่อ…</body>'); }catch(e){} }
+  const key = String(sid)+'|'+Number(no);
+  // 1) จากคลังในเครื่องก่อน (เร็ว + ใช้ได้ตอนไม่มีเน็ต)
+  const hit = await idbGet_(key);
+  if(hit && hit.html){
+    if(w){ w.document.open(); w.document.write(hit.html); w.document.close(); }
+    else { const u=URL.createObjectURL(new Blob([hit.html],{type:'text/html'})); location.href=u; }
+    return;
+  }
+  if(!navigator.onLine){
+    if(w){ try{ w.document.body.innerHTML='<div style="font-family:sans-serif;text-align:center;margin-top:80px;color:#64748b"><h3>📴 ไม่มีอินเทอร์เน็ต</h3><p>สื่อนี้ยังไม่ได้เก็บไว้ในเครื่อง<br>เชื่อมต่อเน็ตแล้วกด "⬇ เก็บทั้งวิชาไว้ใช้ออฟไลน์" หนึ่งครั้ง</p></div>'; }catch(e){} }
+    else toast('ไม่มีเน็ต และสื่อนี้ยังไม่ได้เก็บออฟไลน์','warn');
+    return;
+  }
+  // 2) ดึงจากเซิร์ฟเวอร์ + เก็บเข้าเครื่องอัตโนมัติ (ครั้งหน้าเปิดออฟไลน์ได้)
+  gas('getMediaContent', getEmail_(), getToken_(), sid, no).then(res=>{
+    if(res.ok && res.data && res.data.html){
+      if(w){ w.document.open(); w.document.write(res.data.html); w.document.close(); }
+      else { const u=URL.createObjectURL(new Blob([res.data.html],{type:'text/html'})); location.href=u; }
+      idbPut_(key, { html: res.data.html, name: title, ts: Date.now() });
+    } else {
+      const msg=(res&&res.error)||'เปิดสื่อไม่ได้';
+      if(w){ try{ w.document.body.innerHTML='<p style="font-family:sans-serif;text-align:center;margin-top:80px">'+msg+'</p>'; }catch(e){} }
+      else toast(msg,'error');
+    }
+  }).catch(e=>{
+    const msg='เชื่อมต่อเซิร์ฟเวอร์ไม่ได้: '+e.message;
+    if(w){ try{ w.document.body.innerHTML='<p style="font-family:sans-serif;text-align:center;margin-top:80px">'+msg+'</p>'; }catch(_){} }
+    else toast(msg,'error');
+  });
+}
+
+/* ⬇ เก็บสื่อทั้งวิชาลงเครื่อง (เปิดออฟไลน์ได้ทุกแผน) */
+async function saveSubjectOffline(sid, btn){
+  const plans = SP_MEM[sid] || [];
+  if(!plans.length){ toast('ยังไม่มีรายการสื่อ','warn'); return; }
+  if(!navigator.onLine){ toast('ต้องเชื่อมต่อเน็ตครั้งแรกเพื่อเก็บสื่อ','warn'); return; }
+  btn.disabled = true;
+  let okc=0, fail=0;
+  for(let i=0;i<plans.length;i++){
+    const p = plans[i];
+    btn.textContent = `⏳ กำลังเก็บ ${i+1}/${plans.length}…`;
+    const key = String(sid)+'|'+Number(p.no);
+    const has = await idbGet_(key);
+    if(has && has.html){ okc++; continue; }
+    try{
+      const res = await gas('getMediaContent', getEmail_(), getToken_(), sid, p.no);
+      if(res.ok && res.data && res.data.html){ await idbPut_(key,{html:res.data.html,name:p.name,ts:Date.now()}); okc++; }
+      else fail++;
+    }catch(e){ fail++; }
+  }
+  localStorage.setItem('kps_off_'+sid, String(okc));
+  btn.disabled = false;
+  btn.textContent = `✓ เก็บออฟไลน์แล้ว (${okc} สื่อ) · กดเพื่ออัปเดต`;
+  btn.className = 'text-xs font-semibold rounded-lg px-3.5 py-2 bg-brand-50 text-brand-700 border border-brand-200';
+  toast(fail? `เก็บได้ ${okc} สื่อ (พลาด ${fail} — กดซ้ำเพื่อเก็บต่อ)` : `✅ เก็บครบ ${okc} สื่อ — เปิดสอนได้แม้ไม่มีเน็ต`);
+}
+
+function openDocTab(sid, fileId, name){
+  const w = window.open('', '_blank');
+  if(w){ try{ w.document.write('<!doctype html><meta charset="utf-8"><title>'+name+'</title><body style="font-family:sans-serif;text-align:center;color:#047857;margin-top:80px">⏳ กำลังเปิดเอกสาร…</body>'); }catch(e){} }
+  gas('prepDocPreview', getEmail_(), getToken_(), sid, fileId).then(res=>{
+    if(res.ok && res.data && res.data.id){
+      const shell='<!doctype html><html><head><meta charset="utf-8"><title>'+name+'</title></head><body style="margin:0;background:#525659">'+
+        '<iframe src="https://drive.google.com/file/d/'+res.data.id+'/preview" style="border:0;position:fixed;inset:0;width:100%;height:100%" allow="autoplay"></iframe></body></html>';
+      if(w){ w.document.open(); w.document.write(shell); w.document.close(); }
+    } else {
+      const msg=(res&&res.error)||'เปิดเอกสารไม่ได้';
+      if(w){ try{ w.document.body.innerHTML='<p style="font-family:sans-serif;text-align:center;margin-top:80px">'+msg+'</p>'; }catch(e){} }
+      else toast(msg,'error');
+    }
+  }).catch(e=>{ if(w){ try{ w.document.body.innerHTML='<p style="text-align:center;margin-top:80px">เชื่อมต่อไม่ได้</p>'; }catch(_){} } });
+}
+
+function logoutCustomer(){
+  clearEmail_(); clearContent_(); clearToken_();
+  try{ Object.keys(localStorage).filter(k=>k.startsWith('kps_sp_')||k.startsWith('kps_sf_')).forEach(k=>localStorage.removeItem(k)); }catch(_){ }
+  if(location.hash) history.replaceState(null,'',location.pathname+location.search);
+  MY_DATA = null; SP_MEM={}; SF_MEM={};
+  $('contentBox').classList.add('hidden'); $('contentBox').innerHTML='';
+  $('loginBox').classList.remove('hidden'); $('custEmail').value='';
+}
+
+/* ===================== เข้าสู่ระบบผู้ดูแล ===================== */
+function openAdminGate(){ openModal('m-pin'); setTimeout(()=>$('pinInput').focus(),100); }
+async function adminLogin(){
+  const pin = $('pinInput').value.trim();
+  if(!pin){ toast('กรุณากรอก PIN','warn'); return; }
+  showLoading('กำลังตรวจสอบ...');
+  try{
+    const res = await gas('adminLogin', pin);
+    if(!res.ok){ toast(res.error,'error'); return; }
+    ADMIN_PIN = pin;
+    closeModal('m-pin'); $('pinInput').value='';
+    $('view-customer').classList.add('hidden');
+    $('view-admin').classList.remove('hidden');
+    window.scrollTo(0,0);
+    // ซิงค์รายชื่อวิชาจากระบบขายอัตโนมัติเมื่อเข้าสู่ระบบ (ไม่บล็อกถ้าพลาด)
+    $('loadingMsg').textContent = 'กำลังซิงค์รายชื่อวิชา...';
+    try{ await gas('importSubjectsFromOrderCatalog', pin); }catch(_){}
+    switchTab('subjects');
+  }catch(e){ toast('ผิดพลาด: '+e.message,'error'); }
+  finally{ hideLoading(); }
+}
+function exitAdmin(){
+  ADMIN_PIN='';
+  $('view-admin').classList.add('hidden');
+  $('view-customer').classList.remove('hidden');
+}
+
+/* ===================== Tabs ===================== */
+function switchTab(name){
+  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.add('hidden'));
+  $('tab-'+name).classList.remove('hidden');
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active', b.dataset.tab===name));
+  if(name==='subjects') loadSubjects();
+  if(name==='plans')   loadSubjectsThen(renderPlanLevelSelect);
+  if(name==='access')  loadSubjectsThen(renderAccessLevelSelect);
+  if(name==='report'  && typeof loadReport==='function')   loadReport();
+  if(name==='settings'&& typeof loadSettings==='function') loadSettings();
+}
+
+/* ===================== วิชา (Subjects) ===================== */
+async function loadSubjects(){
+  showLoading('กำลังโหลดวิชา...');
+  try{
+    const res = await gas('getSubjects', ADMIN_PIN);
+    if(res.ok){ SUBJECTS_CACHE = res.data; renderSubjects(); }
+    else toast(res.error,'error');
+  }catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+}
+async function loadSubjectsThen(cb){
+  if(!SUBJECTS_CACHE.length){ const r = await gas('getSubjects', ADMIN_PIN); if(r.ok) SUBJECTS_CACHE=r.data; }
+  cb();
+}
+function renderSubjects(){
+  const q = ($('sjSearch').value||'').toLowerCase();
+  const list = SUBJECTS_CACHE.filter(s=>(s.name+s.level+(s.curriculum||'')).toLowerCase().includes(q));
+  $('subjectList').innerHTML = list.length ? list.map(s=>`
+    <div class="border border-brand-100 rounded-xl p-4">
+      <div class="flex items-start gap-3">
+        ${s.cover?`<img src="${esc(s.cover)}" class="h-12 w-12 rounded-lg object-cover border border-brand-100 flex-shrink-0" loading="lazy" decoding="async">`:`<div class="h-12 w-12 rounded-lg bg-brand-100 flex items-center justify-center flex-shrink-0 text-lg">📚</div>`}
+        <div class="flex-1 min-w-0">
+          <div class="font-semibold text-brand-800 leading-snug">${esc(s.name)}${s.curriculum?` <span class="text-[10px] align-middle px-1.5 py-0.5 rounded bg-brand-50 text-brand-600">หลักสูตร ${esc(s.curriculum)}</span>`:''}</div>
+          <div class="text-xs text-slate-400">${esc(s.level||'-')}${s.hours?' · '+esc(s.hours)+' ชม.':''}</div>
+        </div>
+        <span class="text-[10px] px-2 py-0.5 rounded-full flex-shrink-0 ${s.status==='ปิด'?'bg-slate-100 text-slate-500':'bg-green-50 text-green-600'}">${esc(s.status||'เปิด')}</span>
+      </div>
+      <div class="flex gap-3 text-xs text-slate-500 mt-2">
+        <span>🎬 ${s.planCount} สื่อ</span><span>🔑 ${s.accessCount} สิทธิ์</span>
+      </div>
+      <div class="flex gap-2 mt-3">
+        <button onclick='editSubject(${JSON.stringify(s)})' class="flex-1 bg-amber2-400/20 text-amber2-600 text-xs py-1.5 rounded-lg">✏️ แก้ไข</button>
+        <button onclick="delSubject('${s.id}','${esc(s.name)}')" class="flex-1 bg-red-50 text-red-600 text-xs py-1.5 rounded-lg">🗑️ ลบ</button>
+      </div>
+    </div>`).join('') : `<p class="text-sm text-slate-400 col-span-full text-center py-6">ยังไม่มีวิชา</p>`;
+}
+async function addSubject(){
+  const name=$('sjName').value.trim(); if(!name){ toast('กรอกชื่อวิชา','warn'); return; }
+  showLoading('กำลังบันทึก...');
+  try{
+    const res = await gas('addSubject', ADMIN_PIN, {name, curriculum:$('sjCurriculum').value, level:$('sjLevel').value.trim(), hours:$('sjHours').value.trim(), desc:$('sjDesc')?$('sjDesc').value.trim():''});
+    if(res.ok){ toast('เพิ่มวิชาแล้ว'); $('sjName').value=$('sjLevel').value=$('sjHours').value=''; $('sjCurriculum').value=''; if($('sjDesc'))$('sjDesc').value=''; SUBJECTS_CACHE=[]; loadSubjects(); }
+    else toast(res.error,'error');
+  }catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+}
+function editSubject(s){
+  $('editTitle').textContent='แก้ไขวิชา';
+  $('editBody').innerHTML = `
+    <div class="flex items-center gap-3">
+      <img id="e_coverPreview" src="${esc(s.cover||'')}" class="${s.cover?'':'hidden'} h-16 w-16 rounded-lg object-cover border border-brand-100">
+      <button type="button" onclick="$('e_coverFile').click()" class="bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm px-3 py-2 rounded-lg">🖼️ อัปโหลดภาพปก</button>
+      <input id="e_coverFile" type="file" accept="image/*" class="hidden" onchange="handleSubjectCover(this)">
+      <input id="e_cover" type="hidden" value="${esc(s.cover||'')}">
+    </div>
+    <input id="e_name"  value="${esc(s.name)}"  placeholder="ชื่อวิชา" class="w-full border border-slate-200 rounded-lg px-3 py-2">
+    <select id="e_curriculum" class="w-full border border-slate-200 rounded-lg px-3 py-2">
+      <option value="" ${!s.curriculum?'selected':''}>— เลือกหลักสูตร —</option>
+      <option value="68" ${String(s.curriculum)==='68'?'selected':''}>หลักสูตร 68</option>
+      <option value="51" ${String(s.curriculum)==='51'?'selected':''}>หลักสูตร 51</option>
+    </select>
+    <input id="e_level" value="${esc(s.level||'')}" placeholder="ระดับชั้น" class="w-full border border-slate-200 rounded-lg px-3 py-2">
+    <input id="e_hours" value="${esc(s.hours||'')}" placeholder="เวลาเรียน (ชั่วโมง)" class="w-full border border-slate-200 rounded-lg px-3 py-2">
+    <input id="e_desc"  value="${esc(s.desc||'')}"  placeholder="คำอธิบาย" class="w-full border border-slate-200 rounded-lg px-3 py-2">
+    <select id="e_status" class="w-full border border-slate-200 rounded-lg px-3 py-2">
+      <option ${s.status!=='ปิด'?'selected':''}>เปิด</option><option ${s.status==='ปิด'?'selected':''}>ปิด</option>
+    </select>`;
+  $('editSaveBtn').onclick = async ()=>{
+    showLoading('กำลังบันทึก...');
+    try{
+      const res = await gas('updateSubject', ADMIN_PIN, s.id, {name:$('e_name').value.trim(), curriculum:$('e_curriculum').value, level:$('e_level').value.trim(), hours:$('e_hours').value.trim(), desc:$('e_desc').value.trim(), status:$('e_status').value, cover:$('e_cover').value.trim()});
+      if(res.ok){ toast('บันทึกแล้ว'); closeModal('m-edit'); SUBJECTS_CACHE=[]; loadSubjects(); } else toast(res.error,'error');
+    }catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+  };
+  openModal('m-edit');
+}
+async function handleSubjectCover(input){
+  const file = input.files[0]; if(!file) return;
+  showLoading('กำลังย่อรูปและอัปโหลดภาพปก...');
+  try{
+    const dataUrl = await compressImage(file, 800);
+    const res = await gas('uploadImageToDrive', ADMIN_PIN, dataUrl, 'cover_'+Date.now()+'.jpg');
+    if(res.ok){ $('e_cover').value=res.data; $('e_coverPreview').src=res.data; $('e_coverPreview').classList.remove('hidden'); toast('อัปโหลดภาพปกแล้ว — กดบันทึกเพื่อยืนยัน'); }
+    else toast(res.error,'error');
+  }catch(e){ toast('อัปโหลดไม่สำเร็จ: '+(e.message||e),'error'); }
+  finally{ hideLoading(); input.value=''; }
+}
+async function delSubject(id,name){
+  if(!confirm('ลบวิชา "'+name+'" ?\n(สื่อและสิทธิ์ของวิชานี้จะถูกลบด้วย)')) return;
+  showLoading('กำลังลบ...');
+  try{ const res = await gas('deleteSubject', ADMIN_PIN, id);
+    if(res.ok){ toast('ลบแล้ว'); SUBJECTS_CACHE=[]; loadSubjects(); } else toast(res.error,'error');
+  }catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+}
+
+/* ===================== สื่อ (Plans) ===================== */
+function levelKey(lv){
+  const m=String(lv||'').match(/(อ|ป|ม)\.?\s*(\d+)/);
+  const pref={'อ':0,'ป':1,'ม':2};
+  return m ? ((pref[m[1]]!=null?pref[m[1]]:9)*100 + parseInt(m[2],10)) : 999;
+}
+function levelOptions(){
+  const BASE=['ป.1','ป.2','ป.3','ป.4','ป.5','ป.6','ม.1','ม.2','ม.3','ม.4','ม.5','ม.6'];
+  const lv=[...new Set(BASE.concat(SUBJECTS_CACHE.map(s=>String(s.level||'')).filter(x=>x)))].sort((a,b)=>levelKey(a)-levelKey(b));
+  return '<option value="">ทุกชั้น</option>'+lv.map(l=>`<option value="${esc(l)}">${esc(l)}</option>`).join('');
+}
+function subjectOptionsFor(level){
+  let list=SUBJECTS_CACHE.slice();
+  if(level) list=list.filter(s=>String(s.level)===String(level));
+  list.sort((a,b)=>String(a.name||'').localeCompare(String(b.name||''),'th')||(Number(a.hours)||0)-(Number(b.hours)||0));
+  return list.map(s=>`<option value="${s.id}">${esc(s.name)}${s.level?' ('+esc(s.level)+')':''}${s.hours?' · '+esc(s.hours)+' ชม.':''}</option>`).join('');
+}
+function renderPlanLevelSelect(){ $('planLevel').innerHTML=levelOptions(); renderPlanSubjectSelect(); }
+function renderPlanSubjectSelect(){
+  const sel=$('planSubject'); const cur=sel.value;
+  sel.innerHTML=subjectOptionsFor($('planLevel').value);
+  if(cur && [...sel.options].some(o=>o.value===cur)) sel.value=cur;
+  renderPlans();
+}
+async function renderPlans(){
+  const sid = $('planSubject').value; if(!sid){ $('planList').innerHTML=`<tr><td colspan="4" class="py-4 text-center text-slate-400">— กรุณาเพิ่ม/เลือกวิชา —</td></tr>`; return; }
+  showLoading('กำลังโหลดสื่อ...');
+  try{
+    const res = await gas('getPlans', ADMIN_PIN, sid);
+    if(!res.ok){ toast(res.error,'error'); return; }
+    $('planList').innerHTML = res.data.length ? res.data.map(p=>`
+      <tr class="border-b last:border-0">
+        <td class="py-2">${esc(p.planNo)}</td>
+        <td class="py-2">${esc(p.name)}</td>
+        <td class="py-2 max-w-[260px] truncate"><a href="${esc(p.link)}" target="_blank" class="text-brand-600 underline">${esc(p.link)}</a></td>
+        <td class="py-2 text-right whitespace-nowrap">
+          <button onclick='editPlan(${JSON.stringify(p)})' class="text-amber2-600">✏️</button>
+          <button onclick="delPlan('${p.id}')" class="text-red-600 ml-2">🗑️</button>
+        </td></tr>`).join('') : `<tr><td colspan="4" class="py-4 text-center text-slate-400">ยังไม่มีสื่อ</td></tr>`;
+  }catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+}
+async function importFromFolder(){
+  const sid=$('planSubject').value; if(!sid){ toast('เลือกวิชาก่อน','warn'); return; }
+  const folder=$('plFolder').value.trim();
+  if(!folder){ toast('ใส่ ID หรือลิงก์โฟลเดอร์','warn'); return; }
+  showLoading('กำลังสแกนโฟลเดอร์และนำเข้าสื่อ...');
+  try{
+    const res = await gas('importPlansFromFolder', ADMIN_PIN, sid, folder);
+    if(res.ok){ toast(`นำเข้าแล้ว: อัปเดต ${res.data.updated} · เพิ่มใหม่ ${res.data.added} (รวม ${res.data.total} สื่อ)`); $('plFolder').value=''; renderPlans(); SUBJECTS_CACHE=[]; }
+    else toast(res.error,'error');
+  }catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+}
+function editPlan(p){
+  $('editTitle').textContent='แก้ไขสื่อ';
+  $('editBody').innerHTML = `
+    <input id="ep_no"   value="${esc(p.planNo)}" placeholder="แผนที่" class="w-full border border-slate-200 rounded-lg px-3 py-2">
+    <input id="ep_name" value="${esc(p.name)}" placeholder="ชื่อแผน" class="w-full border border-slate-200 rounded-lg px-3 py-2">
+    <input id="ep_link" value="${esc(p.link)}" placeholder="ลิ้งสื่อ" class="w-full border border-slate-200 rounded-lg px-3 py-2">`;
+  $('editSaveBtn').onclick = async ()=>{
+    showLoading('กำลังบันทึก...');
+    try{ const res = await gas('updatePlan', ADMIN_PIN, p.id, {subjectId:p.subjectId, planNo:$('ep_no').value.trim(), name:$('ep_name').value.trim(), link:$('ep_link').value.trim()});
+      if(res.ok){ toast('บันทึกแล้ว'); closeModal('m-edit'); renderPlans(); } else toast(res.error,'error');
+    }catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+  };
+  openModal('m-edit');
+}
+async function delPlan(id){
+  if(!confirm('ลบสื่อนี้?')) return;
+  showLoading('กำลังลบ...');
+  try{ const res = await gas('deletePlan', ADMIN_PIN, id); if(res.ok){ toast('ลบแล้ว'); renderPlans(); SUBJECTS_CACHE=[]; } else toast(res.error,'error'); }
+  catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+}
+function downloadPlanTemplate(){
+  const csv='\uFEFF'+['แผนที่,ชื่อแผน,ลิ้งสื่อ','1,ตัวอย่างชื่อแผน,https://script.google.com/.../exec?page=plan1'].join('\n');
+  const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'})); a.download='ฟอร์มนำเข้าสื่อ.csv'; a.click();
+}
+function importPlans(input){
+  const sid=$('planSubject').value; if(!sid){ toast('เลือกวิชาปลายทางก่อน','warn'); input.value=''; return; }
+  const file=input.files[0]; if(!file) return;
+  const reader=new FileReader();
+  reader.onload=async(e)=>{
+    try{
+      const wb=XLSX.read(e.target.result,{type:'array'});
+      const rows=XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]],{defval:''});
+      const arr=rows.map(r=>({ planNo:r['แผนที่']||r['planNo']||'', name:r['ชื่อแผน']||r['name']||'', link:r['ลิ้งสื่อ']||r['link']||'' }));
+      showLoading('กำลังนำเข้า...');
+      const res=await gas('bulkImportPlans', ADMIN_PIN, sid, arr);
+      if(res.ok){ toast('นำเข้า '+res.data+' รายการ'); renderPlans(); SUBJECTS_CACHE=[]; } else toast(res.error,'error');
+    }catch(err){ toast('อ่านไฟล์ไม่สำเร็จ: '+err.message,'error'); }
+    finally{ hideLoading(); input.value=''; }
+  };
+  reader.readAsArrayBuffer(file);
+}
+
+/* ===================== สิทธิ์ (Access) ===================== */
+function renderAccessLevelSelect(){ $('accLevel').innerHTML=levelOptions(); renderAccessSubjectSelect(); }
+function renderAccessSubjectSelect(){
+  const sel=$('accSubject'); const cur=sel.value;
+  sel.innerHTML=subjectOptionsFor($('accLevel').value);
+  if(cur && [...sel.options].some(o=>o.value===cur)) sel.value=cur;
+  renderAccess();
+}
+async function renderAccess(){
+  const sid=$('accSubject').value; if(!sid){ $('accessList').innerHTML=`<tr><td colspan="5" class="py-4 text-center text-slate-400">— เลือกวิชา —</td></tr>`; return; }
+  showLoading('กำลังโหลด...');
+  try{
+    const res=await gas('getAccess', ADMIN_PIN, sid);
+    if(!res.ok){ toast(res.error,'error'); return; }
+    const q=($('accSearch').value||'').toLowerCase();
+    const list=res.data.filter(a=>a.email.toLowerCase().includes(q));
+    $('accessList').innerHTML = list.length ? list.map(a=>`
+      <tr class="border-b last:border-0">
+        <td class="py-2">${esc(a.email)}</td>
+        <td class="py-2 text-xs text-slate-500">${esc((a.granted||'').split(' ')[0])}</td>
+        <td class="py-2 text-xs text-slate-500">${esc(a.expire||'-')}</td>
+        <td class="py-2"><span class="text-[10px] px-2 py-0.5 rounded-full ${a.status==='ปิด'?'bg-slate-100 text-slate-500':'bg-green-50 text-green-600'}">${esc(a.status||'เปิด')}</span></td>
+        <td class="py-2 text-right"><button onclick="delAccess('${a.id}')" class="text-red-600">🗑️</button></td>
+      </tr>`).join('') : `<tr><td colspan="5" class="py-4 text-center text-slate-400">ยังไม่มีผู้มีสิทธิ์</td></tr>`;
+  }catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+}
+async function addAccess(){
+  const sid=$('accSubject').value; if(!sid){ toast('เลือกวิชาก่อน','warn'); return; }
+  const emails=$('accEmails').value.trim(); if(!emails){ toast('กรอกอีเมล','warn'); return; }
+  showLoading('กำลังเพิ่มสิทธิ์...');
+  try{
+    const res=await gas('addAccess', ADMIN_PIN, sid, emails, $('accExpire').value);
+    if(res.ok){ toast(`เพิ่ม ${res.data.added} รายการ`+(res.data.skipped?` (ซ้ำ ${res.data.skipped})`:'')); $('accEmails').value=''; renderAccess(); SUBJECTS_CACHE=[]; }
+    else toast(res.error,'error');
+  }catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+}
+async function delAccess(id){
+  if(!confirm('ลบสิทธิ์นี้?')) return;
+  showLoading('กำลังลบ...');
+  try{ const res=await gas('deleteAccess', ADMIN_PIN, id); if(res.ok){ toast('ลบแล้ว'); renderAccess(); SUBJECTS_CACHE=[]; } else toast(res.error,'error'); }
+  catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+}
+
+/* ===================== ซิงค์จากคำสั่งซื้อ ===================== */
+async function importCatalog(){
+  if(!confirm('นำเข้ารายชื่อวิชาทั้งหมดจากแท็บแคตตาล็อกในระบบขาย? (กันซ้ำให้อัตโนมัติ)')) return;
+  showLoading('กำลังนำเข้าวิชา...');
+  try{
+    const res = await gas('importSubjectsFromOrderCatalog', ADMIN_PIN);
+    if(res.ok){ toast('เพิ่มวิชาใหม่ '+res.data.added+' รายการ'); SUBJECTS_CACHE=[]; loadSubjectsThen(renderAccessLevelSelect); }
+    else toast(res.error,'error');
+  }catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+}
+function openSyncModal(){ $('syncResult').classList.add('hidden'); openModal('m-sync'); }
+async function runSync(dry){
+  showLoading(dry?'กำลังพรีวิว...':'กำลังเพิ่มสิทธิ์...');
+  try{
+    const res=await gas('syncFromOrders', ADMIN_PIN, dry);
+    const box=$('syncResult'); box.classList.remove('hidden');
+    if(!res.ok){ box.innerHTML=`<span class="text-red-600">${esc(res.error)}</span>`; return; }
+    const um=res.data.unmatchedProducts||{}; const umKeys=Object.keys(um);
+    box.innerHTML = `<div class="text-brand-700 font-medium">${dry?'พรีวิว: จะเพิ่ม':'เพิ่มแล้ว'} ${res.data.added} สิทธิ์</div>`
+      + (umKeys.length?`<div class="text-amber2-600 mt-2 text-xs">⚠️ รายการที่จับคู่วิชาไม่ได้ (ยังไม่มีวิชานี้ในระบบ หรือชื่อไม่ตรง):<br>${umKeys.slice(0,20).map(k=>esc(k)+' ('+um[k]+')').join('<br>')}${umKeys.length>20?'<br>...':''}</div>`:'');
+    if(!dry){ SUBJECTS_CACHE=[]; renderAccess(); }
+  }catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+}
+
+/* ===================== Backup / Import / Clear ===================== */
+async function doBackup(){
+  showLoading('กำลังสำรองข้อมูล...');
+  try{
+    const res=await gas('backupAllData', ADMIN_PIN);
+    if(!res.ok){ toast(res.error,'error'); return; }
+    const a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([JSON.stringify(res.data,null,2)],{type:'application/json'}));
+    a.download='krupromsue_backup_'+new Date().toISOString().slice(0,10)+'.json'; a.click();
+    toast('ดาวน์โหลดไฟล์สำรองแล้ว');
+  }catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+}
+function doImport(input){
+  const file=input.files[0]; if(!file) return;
+  const reader=new FileReader();
+  reader.onload=async(e)=>{
+    if(!confirm('นำเข้าข้อมูลจากไฟล์สำรอง? ข้อมูลเดิม (วิชา/สื่อ/สิทธิ์) จะถูกแทนที่')) { input.value=''; return; }
+    showLoading('กำลังนำเข้า...');
+    try{ const res=await gas('importBackupData', ADMIN_PIN, e.target.result);
+      if(res.ok){ toast('นำเข้าสำเร็จ'); SUBJECTS_CACHE=[]; switchTab('subjects'); } else toast(res.error,'error');
+    }catch(err){ toast('ไฟล์ไม่ถูกต้อง','error'); } finally{ hideLoading(); input.value=''; }
+  };
+  reader.readAsText(file);
+}
+function openClearModal(){ $('clearInput').value=''; openModal('m-clear'); }
+async function doClear(){
+  showLoading('กำลังล้างข้อมูล...');
+  try{ const res=await gas('clearAllData', ADMIN_PIN, $('clearInput').value.trim());
+    if(res.ok){ toast('ล้างข้อมูลแล้ว'); closeModal('m-clear'); SUBJECTS_CACHE=[]; switchTab('subjects'); } else toast(res.error,'warn');
+  }catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+}
+
+/* ===================== รายงานสรุป ===================== */
+async function loadReport(){
+  showLoading('กำลังโหลดรายงาน...');
+  try{
+    const res = await gas('getReportData', ADMIN_PIN);
+    if(!res.ok){ toast(res.error,'error'); return; }
+    const d = res.data;
+    $('rpSubjects').textContent  = d.totalSubjects;
+    $('rpPlans').textContent     = d.totalPlans;
+    $('rpAccess').textContent    = d.totalAccess;
+    $('rpCustomers').textContent = d.totalCustomers;
+    $('rpTable').innerHTML = d.perSubject.length ? d.perSubject.map(s=>`
+      <tr class="border-b last:border-0">
+        <td class="py-2">${esc(s.name)}</td>
+        <td class="py-2 text-slate-500">${esc(s.level||'-')}</td>
+        <td class="py-2 text-center">${s.plans}</td>
+        <td class="py-2 text-center">${s.access}</td>
+      </tr>`).join('') : `<tr><td colspan="4" class="py-4 text-center text-slate-400">ยังไม่มีข้อมูล</td></tr>`;
+  }catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+}
+
+/* ===================== ตั้งค่าระบบ ===================== */
+async function loadSettings(){
+  showLoading('กำลังโหลดการตั้งค่า...');
+  try{
+    const res = await gas('getSettings');
+    if(res.ok){
+      const d = res.data;
+      $('setSiteName').value = d.siteName || '';
+      $('setSlogan').value   = d.slogan || '';
+      $('setContact').value  = d.contactLink || '';
+      $('setLogoURL').value  = d.logoURL || '';
+      if(d.logoURL){ $('logoPreview').src = d.logoURL; $('logoPreview').classList.remove('hidden'); }
+    }
+    refreshAutoSync();
+  }catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+}
+async function saveSiteSettings(){
+  showLoading('กำลังบันทึก...');
+  try{
+    const res = await gas('saveSettings', ADMIN_PIN, {
+      siteName:$('setSiteName').value.trim(),
+      slogan:$('setSlogan').value.trim(),
+      contactLink:$('setContact').value.trim(),
+      logoURL:$('setLogoURL').value.trim()
+    });
+    if(res.ok) toast('บันทึกการตั้งค่าแล้ว'); else toast(res.error,'error');
+  }catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+}
+async function changePin(){
+  const np = $('newPin').value.trim();
+  if(np.length < 4){ toast('PIN ต้องอย่างน้อย 4 ตัว','warn'); return; }
+  showLoading('กำลังเปลี่ยน PIN...');
+  try{
+    const res = await gas('saveSettings', ADMIN_PIN, {adminPIN:np});
+    if(res.ok){ ADMIN_PIN = np; $('newPin').value=''; toast('เปลี่ยน PIN เรียบร้อย'); } else toast(res.error,'error');
+  }catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+}
+
+/* บีบอัด/ย่อรูปก่อนอัปโหลด */
+function compressImage(file, maxW){
+  return new Promise((resolve,reject)=>{
+    const r = new FileReader();
+    r.onload = ev=>{
+      const img = new Image();
+      img.onload = ()=>{
+        const scale = Math.min(1, maxW/img.width);
+        const w = Math.round(img.width*scale), h = Math.round(img.height*scale);
+        const c = document.createElement('canvas'); c.width=w; c.height=h;
+        c.getContext('2d').drawImage(img,0,0,w,h);
+        resolve(c.toDataURL('image/jpeg',0.82));
+      };
+      img.onerror = reject; img.src = ev.target.result;
+    };
+    r.onerror = reject; r.readAsDataURL(file);
+  });
+}
+async function handleLogo(input){
+  const file = input.files[0]; if(!file) return;
+  showLoading('กำลังย่อรูปและอัปโหลด...');
+  try{
+    const dataUrl = await compressImage(file, 400);
+    const res = await gas('uploadImageToDrive', ADMIN_PIN, dataUrl, 'logo_'+Date.now()+'.jpg');
+    if(res.ok){
+      $('setLogoURL').value = res.data;
+      $('logoPreview').src = res.data; $('logoPreview').classList.remove('hidden');
+      toast('อัปโหลดโลโก้แล้ว — กด "บันทึกข้อมูลเว็บไซต์" เพื่อยืนยัน');
+    } else toast(res.error,'error');
+  }catch(e){ toast('อัปโหลดไม่สำเร็จ: '+(e.message||e),'error'); }
+  finally{ hideLoading(); input.value=''; }
+}
+
+/* ===================== ซิงค์อัตโนมัติ ===================== */
+async function refreshAutoSync(){
+  try{
+    const res = await gas('getAutoSyncStatus', ADMIN_PIN);
+    if(res.ok){
+      const d = res.data;
+      $('autoSyncStatus').innerHTML = d.enabled
+        ? `<span class="text-green-600 font-medium">🟢 เปิดอยู่</span> · ทุก ${esc(d.minutes)} นาที`
+          + (d.lastRun?`<br><span class="text-xs text-slate-500">รันล่าสุด: ${esc(d.lastRun)} · ผลล่าสุด: ${esc(String(d.lastAdded))}</span>`:'')
+        : `<span class="text-slate-500">⚪ ปิดอยู่</span>`;
+      if(d.minutes) $('autoSyncMinutes').value = d.minutes;
+    }
+  }catch(e){}
+}
+async function enableAutoSync(){
+  showLoading('กำลังตั้งค่าซิงค์อัตโนมัติ...');
+  try{
+    const res = await gas('enableAutoSync', ADMIN_PIN, $('autoSyncMinutes').value);
+    if(res.ok){ toast('เปิดซิงค์อัตโนมัติ ทุก '+res.data.minutes+' นาที'); refreshAutoSync(); } else toast(res.error,'error');
+  }catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+}
+async function disableAutoSync(){
+  showLoading('กำลังปิด...');
+  try{
+    const res = await gas('disableAutoSync', ADMIN_PIN);
+    if(res.ok){ toast('ปิดซิงค์อัตโนมัติแล้ว'); refreshAutoSync(); } else toast(res.error,'error');
+  }catch(e){ toast(e.message,'error'); } finally{ hideLoading(); }
+}
+
+/* ===================== Init ===================== */
+window.addEventListener('DOMContentLoaded', async ()=>{
+  await checkConnection();
+  const saved = getEmail_();
+  if(saved){
+    $('custEmail').value = saved;
+    const cached = getContent_();
+    if(cached){
+      try{ renderCustomerContent(JSON.parse(cached)); }catch(_){ }   // ⚡ แสดงทันทีจากที่จำไว้
+      customerLogin(true);                                            // แล้วรีเฟรชเบื้องหลังเงียบๆ
+    } else { renderSkeleton_(); customerLogin(); }
+  }
+});
+</script>
+</body>
+</html>
